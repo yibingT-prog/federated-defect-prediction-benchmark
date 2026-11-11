@@ -1,0 +1,4 @@
+# Preserve historical byte hashes, including Windows line endings in snapshots.
+* text=auto
+experiments/completed/** -text
+results/** -text

@@ -1,0 +1,18 @@
+{
+  "experiment": "fedcpdp-paper-lopo-20261110",
+  "source_snapshot": "Completed local run, 2026-11-10 to 2026-11-11",
+  "upstream_repository": "https://github.com/MeeteshNevendra/FedCPDP",
+  "upstream_commit": "ab5af637a60aed4c34a5338709b3ac65b344ec37",
+  "upstream_license": "MIT; copyright (c) 2025 MeeteshNevendra",
+  "dataset_archive_sha256": "4c19cbcf4a8d22fa99f47ec440b99dc716e6148a962d5af4f6f65292137b7801",
+  "source_files_sha256": {
+    "run.py": "c562f5c7d2da2f8785108bcd4c259fe839bf954bea1d819f6f210f1354f7afe2",
+    "check.py": "43c92f47391e7d5965ad966d3cb1fad8b543012f18c2a5db79f086c03adc58f8",
+    "monitor.py": "d2b3a7011df77e8206cf11a23fb3b2cb2dd44c989b5963c57ca275b1ea548521",
+    "protocol.json": "331d05aeb00cda1eb60a527f7947c26742249cf2cdcce8b46b42deeb49bcabcd",
+    "manifest.json": "078f461cceaaa0ced8667b9500c8595d78f499f167ce75972dbef41b1ab8fc5b",
+    "vendor/fed_cpdp.py": "dc8dba706c475e74f22fd7d68f513e7eae19e9bcf8007db9a0b4f57bed4f3687"
+  },
+  "snapshot_policy": "Files listed above are byte-identical to executed source. Do not edit them in place; add a new experiment version.",
+  "distributed_results": "Aggregate project metrics only. Raw records, per-instance predictions and checkpoints are excluded."
+}

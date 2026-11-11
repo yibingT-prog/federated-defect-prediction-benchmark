@@ -1,0 +1,74 @@
+{
+  "status": "frozen_local_author_implementation_experiment",
+  "scope": "FedCPDP standalone, paper-style 30-project LOPO; NOT the previous cross-family-only RQ2 or MSMDA support/query task",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "models": 90,
+  "target": "All target records; no target labels during training/selection; project-wise target feature normalization is transductive",
+  "source_split": "Fixed split seed 20261110; first legal two-class fold among five stratified group folds for validation (~20%), others training (~80%); groups are identical complete input feature rows. Same splits across model seeds. No public/attack reserve in this standalone run.",
+  "duplicate_policy": "Preserve raw files. In each fold remove source records with features identical to target within identical schema; preserve conflicting source labels but group identical features for splitting. Save indices.",
+  "model": {
+    "ROUNDS": 50,
+    "LOCAL_EPOCHS": 5,
+    "BATCH_SIZE": 32,
+    "HASH_DIM": 1024,
+    "H1_DIM": 128,
+    "H2_DIM": 64,
+    "LEARNING_RATE": 0.003,
+    "DROPOUT_P": 0.2,
+    "FEDPROX_MU": 0.01,
+    "ALIGN_MEAN_WEIGHT": 0.001,
+    "ALIGN_VAR_WEIGHT": 0.001,
+    "USE_DP": true,
+    "DP_CLIP_NORM": 1.0,
+    "DP_NOISE_MULTIPLIER": 0.1
+  },
+  "paper_verified": [
+    "ROUNDS",
+    "LOCAL_EPOCHS",
+    "BATCH_SIZE",
+    "FEDPROX_MU",
+    "ALIGN_MEAN_WEIGHT",
+    "ALIGN_VAR_WEIGHT"
+  ],
+  "code_default_not_verified_as_paper_final": [
+    "HASH_DIM",
+    "H1_DIM",
+    "H2_DIM",
+    "LEARNING_RATE",
+    "DROPOUT_P",
+    "DP_CLIP_NORM",
+    "DP_NOISE_MULTIPLIER"
+  ],
+  "aggregation": "Author hybrid rule; replace training loss input by unweighted held-out BCE of local model before update perturbation",
+  "thresholds": {
+    "study_primary": "Grid 0.05..0.95 step 0.025; maximize source-project macro MCC, tie higher macro Recall then lower threshold",
+    "paper_supplement": "Same grid; pooled source-validation F1, tie lower threshold"
+  },
+  "effort": "Probability / raw LOC; stable row-ID tie break; budgets 5,10,20,40%; linear interpolation; truncated Popt area. Any invalid target LOC -> all effort metrics N/A for this project.",
+  "ensemble": "Mean probability of three independent models; thresholds selected from validation records held out by all three; ensemble is NOT an additional independent repetition",
+  "deviations_and_limits": [
+    "Author CSV release counts differ from paper table; no claim to exact numerical reproduction",
+    "80/20 validation and fixed split seed are implementation choices not specified in paper",
+    "Source target-duplicate exclusion and group splits are leakage controls added for this run",
+    "Native source loader excludes loc but not every alternative LOC field; preserve author feature selection and extract effort separately",
+    "Author core uses an approximate focal-loss gradient and partial alignment backprop; unchanged and explicitly not a rederivation of paper equations",
+    "Author Python hash used with PYTHONHASHSEED=0; environment frozen; not a portable hash guarantee",
+    "C=1 and sigma=0.1 are upstream defaults; no verified total epsilon/delta; auxiliary statistics are not fully protected",
+    "Noise enabled as native privacy mechanism; no additional privacy grid or RQ3 experiment",
+    "FedCPDP all-other-project LOPO includes same-family sources, differing from earlier RQ2 cross-family-only proposal"
+  ],
+  "environment": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.3.3",
+    "pandas": "2.3.3",
+    "sklearn": "1.7.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "blas_threads_per_worker": 1,
+    "workers": 4
+  },
+  "vendor_sha256": "dc8dba706c475e74f22fd7d68f513e7eae19e9bcf8007db9a0b4f57bed4f3687"
+}
