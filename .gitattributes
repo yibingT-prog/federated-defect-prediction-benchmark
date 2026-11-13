@@ -1,4 +1,5 @@
 # Preserve historical byte hashes, including Windows line endings in snapshots.
 * text=auto
 experiments/completed/** -text
+experiments/homogeneous/flr-tff-20261111/** -text
 results/** -text

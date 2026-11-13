@@ -1,0 +1,53 @@
+{
+  "status": "TFF_smoke_and_real_data_pilot_passed_formal_run_launched",
+  "model": "FLR, native TensorFlow Federated API",
+  "data": "Author FedCPDP CSV release, same-family project-LOPO; no hashing",
+  "training": {
+    "rounds": 100,
+    "local_epochs": 100,
+    "batch_size": 20,
+    "shuffle_buffer": 500,
+    "client_lr": 0.1,
+    "server_lr": 1.0,
+    "participation": 1.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "classifier": "Dense(1, sigmoid), zero initial weights, binary crossentropy, SGD"
+  },
+  "split": "Reuse same-family source indices from prior FedCPDP run seed42; grouped ~80/20 split, seed20261110; target all records",
+  "normalization": "Per-source minmax fitted only on training rows; source validation uses training scale; target uses its own unlabeled features",
+  "primary_threshold": "Source-project macro MCC, then macro Recall, then lower threshold; 0.05..0.95 step0.025",
+  "native_threshold": 0.5,
+  "checkpoint": "Final actual aggregation round100; never test-selected",
+  "deviations": [
+    "Author README TF2.5.0 conflicts with TFF0.20.0 metadata requiring TF2.8; use TF2.8.0 with TFF0.20.0",
+    "Dataset release and project-level same-family protocol differ from original FLR benchmark",
+    "Explicit held-out source validation and duplicate grouping/exclusion reused from prior run",
+    "100 actual updates, correcting author range(1,100) which runs99",
+    "10 seeded runs instead of original100; no ensemble",
+    "Retain LOC-zero records for common test population; invalid LOC makes effort metrics unavailable",
+    "Constant minmax columns handled with unit denominator instead of dropping rows",
+    "Deterministic per-client/per-round shuffle seeds; repeat then shuffle then batch as author",
+    "No LACE2 dependency or baselines in this FLR-only run"
+  ],
+  "metrics": [
+    "ROC_AUC",
+    "MCC",
+    "Recall",
+    "G_mean",
+    "F1",
+    "CostEffect@20",
+    "Popt@20"
+  ],
+  "efficiency_evaluation": false
+}

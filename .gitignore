@@ -26,6 +26,9 @@ experiments/**/preflight.json
 experiments/**/verification_failure.json
 experiments/**/verified_results.json
 experiments/**/STOP
+experiments/**/prepared/
+experiments/**/pilot/
+experiments/**/wheelhouse/
 datasets/raw/
 outputs/
 build/

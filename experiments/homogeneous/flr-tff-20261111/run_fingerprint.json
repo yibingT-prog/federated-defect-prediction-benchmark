@@ -1,0 +1,15 @@
+{
+  "image": "sha256:eaf7f5b59ba66ab3f380584d7fac55126d720cae575d8a82097a6da4ae0e488a",
+  "files": {
+    "build_and_start.py": "6d0d7808dd78c8ca0e02c9cff0533dbc0e92728fab75c4b7cd302b327e0f78d5",
+    "download_legacy_wheel.py": "7e36a56e0344aacbb977b9825d87bfa1ae447bcadb23f169bf0b71671725278e",
+    "prepare.py": "7394fe588d8f7bd287e32b205bcdfd754e6673f406a5c3febe7a8eef1ed857e2",
+    "schedule.py": "000dc38553b319664618221d9894579a5187834cffd2f2f9bf55b894e9886f50",
+    "smoke_tff.py": "fb55c108d690b2031abe469a06dcb852d4bfb2f8cd903016b2296bd00cb705c7",
+    "summarize.py": "ae1118b40a001f4f0e7a2f3aeb2689844fda5bb6b1e7f0e48b84a91cc99045b7",
+    "train_tff.py": "614b0fc7127b29ce7af5a603071a982cc30dbc5525dffc3249d96de0818bd9e8",
+    "protocol.json": "c594aa403aa63881108f010708f3507cea0dabc6eb4b0e2b2ea5cebf027b3231",
+    "tasks.json": "8528129afad6132f900784e544b9c2dd4233c65375f9bffb2f242b13963b6efe",
+    "requirements-tff.txt": "37b4019cc2ca5dfcf271e5b20f5fd3415bf36ff9a94447782327681809e0f246"
+  }
+}

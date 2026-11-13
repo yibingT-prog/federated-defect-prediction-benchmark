@@ -2,7 +2,9 @@
 
 Reproducible experiments comparing complete federated learning methods for software defect prediction. Native classifiers and core method mechanisms are preserved. The repository is intended to cover homogeneous features, heterogeneous features, privacy effects, and sensitivity analysis.
 
-**Current release:** one completed FedCPDP standalone experiment (30 projects, 90 seed models, 30 ensembles). Homogeneous comparisons, the final heterogeneous comparison, privacy sweeps, and sensitivity experiments are **not implemented or completed yet**. The completed LOPO run includes same-family sources and must not be described as the final cross-family-only RQ2 benchmark.
+**Current release:** two separately versioned completed experiments: [FedCPDP](experiments/completed/fedcpdp-paper-lopo-20261110/) (30 targets, 90 seed models, 30 ensembles; all-other-project sources) and [FLR](experiments/homogeneous/flr-tff-20261111/) (30 targets, 300 models; within-family sources). Their protocols differ: do not use these scores for a matched method ranking. The full multi-method comparison, privacy sweeps and sensitivity studies remain pending.
+
+**FLR audit limitation:** 21 target tasks have cross-client source training/validation duplicate-feature overlap. Numerical results passed verification, but threshold selection can be affected. This historical experiment is published with limitations, not certified as a globally leakage-free final benchmark. See the [FLR results and analysis](results/flr-homogeneous-20261111/README.md). The FedCPDP run includes same-family sources and is not the final cross-family-only RQ2 benchmark.
 
 ## Repository layout
 
@@ -12,12 +14,13 @@ experiments/
     run.py, check.py, monitor.py
     protocol.json, manifest.json, provenance.json
     vendor/fed_cpdp.py, vendor/LICENSE
-  homogeneous/                         # RQ1 scope and future experiments
+  homogeneous/flr-tff-20261111/         # executed native-TFF FLR + frozen splits
   heterogeneous/                       # RQ2 scope and admission requirements
   privacy/                             # RQ3 scope, not yet executed
   sensitivity/                         # RQ4 scope, not yet executed
 datasets/                              # provenance and local preparation policy
 results/fedcpdp-paper-lopo-20261110/     # verified project-level metrics
+results/flr-homogeneous-20261111/        # separate FLR metrics, analysis and audit
 scripts/                               # dataset preparation and integrity checks
 tests/                                 # small metric and split correctness checks
 docs/                                  # experiment design and reproduction notes

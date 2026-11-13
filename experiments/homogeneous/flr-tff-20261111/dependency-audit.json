@@ -1,0 +1,62 @@
+{
+  "tensorflow-federated": {
+    "version": "0.20.0",
+    "requires_dist": [
+      "absl-py (~=1.0.0)",
+      "attrs (~=21.2.0)",
+      "cachetools (~=3.1.1)",
+      "dm-tree (~=0.1.1)",
+      "farmhashpy (~=0.4.0)",
+      "grpcio (~=1.34.0)",
+      "jax (~=0.2.27)",
+      "jaxlib (~=0.1.76)",
+      "numpy (~=1.21.4)",
+      "portpicker (~=1.3.1)",
+      "semantic-version (~=2.8.5)",
+      "tensorflow-model-optimization (~=0.7.1)",
+      "tensorflow-privacy (~=0.7.3)",
+      "tensorflow (~=2.8.0)",
+      "tqdm (~=4.28.1)"
+    ]
+  },
+  "tensorflow-privacy": {
+    "version": "0.7.3",
+    "requires_dist": [
+      "scipy (>=0.17)",
+      "tensorflow-estimator (>=2.3.0)",
+      "attrs (>=21.2.0)",
+      "mpmath",
+      "dm-tree (~=0.1.1)",
+      "tensorflow-probability (>=0.13.0)",
+      "tensorflow-datasets (>=4.4.0)",
+      "tensorflow (>=1.0.0) ; extra == 'tf'",
+      "tensorflow-gpu (>=1.0.0) ; extra == 'tf_gpu'"
+    ]
+  },
+  "tensorflow": {
+    "version": "2.8.0",
+    "requires_dist": [
+      "absl-py (>=0.4.0)",
+      "astunparse (>=1.6.0)",
+      "flatbuffers (>=1.12)",
+      "gast (>=0.2.1)",
+      "google-pasta (>=0.1.1)",
+      "h5py (>=2.9.0)",
+      "keras-preprocessing (>=1.1.1)",
+      "libclang (>=9.0.1)",
+      "numpy (>=1.20)",
+      "opt-einsum (>=2.3.2)",
+      "protobuf (>=3.9.2)",
+      "setuptools",
+      "six (>=1.12.0)",
+      "termcolor (>=1.1.0)",
+      "typing-extensions (>=3.6.6)",
+      "wrapt (>=1.11.0)",
+      "tensorboard (<2.9,>=2.8)",
+      "tf-estimator-nightly (==2.8.0.dev2021122109)",
+      "keras (<2.9,>=2.8.0rc0)",
+      "tensorflow-io-gcs-filesystem (>=0.23.1)",
+      "grpcio (<2.0,>=1.24.3)"
+    ]
+  }
+}
