@@ -1,0 +1,12 @@
+{
+  "data.py": "4b1a4eaf06d14810c3c5b83f4bd8fc070402e08a81fbbe31b1fca880151c4936",
+  "train.py": "805636a79bccd20f7af4e4583059264ac25a16fe9940415e44d2cf0ad2874d6b",
+  "schedule.py": "648783b033fe1b40fd92327215a681f33dbfbf7a9aa62f9771b6102887dfdec8",
+  "summarize.py": "58c17c1d3a1c6928d228a929bfca8e356a5d69859281ae353d1462db8de075f0",
+  "metrics.py": "41ea1f9ab84eaee035787df0c1eee14f1dfd9b74d85a4af43eedbee8ad62f50c",
+  "preflight.py": "391abd2629016a8f7b44eae51d38db47452666998d51de09f8c7e4aa67034d36",
+  "protocol.json": "3539f84fe2b347cd145d9e2afe6809fa3fd1542bd98473ea79e402e3c26890a8",
+  "tasks.json": "83b1b6b1ad386f18d560124cdb35093a47967b5ad098d22e4e8598a586324b69",
+  "data_manifest.json": "078f461cceaaa0ced8667b9500c8595d78f499f167ce75972dbef41b1ab8fc5b",
+  "vendor/fed_cpdp.py": "dc8dba706c475e74f22fd7d68f513e7eae19e9bcf8007db9a0b4f57bed4f3687"
+}

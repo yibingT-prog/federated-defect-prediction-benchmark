@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "targets_audited": 30,
+  "smoke_targets": [
+    "ar5",
+    "Apache",
+    "CM1",
+    "EQ",
+    "ant-1.7"
+  ],
+  "native_feature_arrays_exact": true,
+  "author_core_sha256": "dc8dba706c475e74f22fd7d68f513e7eae19e9bcf8007db9a0b4f57bed4f3687",
+  "native_training_params_bitwise_equal_at_round2": true,
+  "resumed_round50_equals_author_uninterrupted": true,
+  "full_pilot": {
+    "target": "ar5",
+    "seed": 0,
+    "rounds": 50
+  },
+  "global_cross_client_feature_isolation_required": false,
+  "observed_numerical_warning": "Author sigmoid exp overflow in ar5 pilot; final probabilities finite; exact native equivalence and result verification passed; author code unchanged"
+}

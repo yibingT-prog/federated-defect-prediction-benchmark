@@ -1,0 +1,13 @@
+{
+  "status": "completed_and_verified",
+  "method": "FedCPDP-author-native-homogeneous",
+  "aggregation": "author training loss",
+  "completed": 300,
+  "failed": 0,
+  "rounds_per_run": 50,
+  "training_completed_at": "2026-11-15T18:28:18.440084+08:00",
+  "verification_written_at": "2026-11-15T18:29:10.221066+08:00",
+  "checked_at": "2026-11-15T18:35:44.292418+08:00",
+  "source_snapshot": "all matched",
+  "summary_rows": 900
+}

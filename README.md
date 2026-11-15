@@ -2,7 +2,7 @@
 
 Reproducible experiments comparing complete federated learning methods for software defect prediction. Native classifiers and core method mechanisms are preserved. The repository is intended to cover homogeneous features, heterogeneous features, privacy effects, and sensitivity analysis.
 
-**Current release:** two separately versioned completed experiments: [FedCPDP](experiments/completed/fedcpdp-paper-lopo-20261110/) (30 targets, 90 seed models, 30 ensembles; all-other-project sources) and [FLR](experiments/homogeneous/flr-tff-20261111/) (30 targets, 300 models; within-family sources). Their protocols differ: do not use these scores for a matched method ranking. The full multi-method comparison, privacy sweeps and sensitivity studies remain pending.
+**Current release:** three separately versioned completed experiments: historical [FedCPDP mixed-source LOPO](experiments/completed/fedcpdp-paper-lopo-20261110/) (90 seed models, 30 ensembles), [FLR homogeneous](experiments/homogeneous/flr-tff-20261111/) (300 models), and **[FedCPDP native homogeneous](experiments/homogeneous/fedcpdp-native-20261114/PUBLICATION.md)** (300 models, 50 rounds, author training-loss aggregation; completed 2026-11-15). See the [native results and analysis](results/fedcpdp-native-homogeneous-20261114/README.md). The prior server validation-loss variant is not this release. ALMITY results are not included in this upload. Multi-method rankings and sensitivity studies remain pending.
 
 **FLR audit limitation:** 21 target tasks have cross-client source training/validation duplicate-feature overlap. Numerical results passed verification, but threshold selection can be affected. This historical experiment is published with limitations, not certified as a globally leakage-free final benchmark. See the [FLR results and analysis](results/flr-homogeneous-20261111/README.md). The FedCPDP run includes same-family sources and is not the final cross-family-only RQ2 benchmark.
 
@@ -15,12 +15,14 @@ experiments/
     protocol.json, manifest.json, provenance.json
     vendor/fed_cpdp.py, vendor/LICENSE
   homogeneous/flr-tff-20261111/         # executed native-TFF FLR + frozen splits
+  homogeneous/fedcpdp-native-20261114/  # author native training-loss aggregation
   heterogeneous/                       # RQ2 scope and admission requirements
   privacy/                             # RQ3 scope, not yet executed
   sensitivity/                         # RQ4 scope, not yet executed
 datasets/                              # provenance and local preparation policy
 results/fedcpdp-paper-lopo-20261110/     # verified project-level metrics
 results/flr-homogeneous-20261111/        # separate FLR metrics, analysis and audit
+results/fedcpdp-native-homogeneous-20261114/ # 300 native models, metrics and predictions
 scripts/                               # dataset preparation and integrity checks
 tests/                                 # small metric and split correctness checks
 docs/                                  # experiment design and reproduction notes

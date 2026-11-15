@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "log4j-1.0",
+  "family": "PROMISE",
+  "seed": 0,
+  "rounds": 50,
+  "fingerprint": "7727f47da029e81d97d5bf4f2a36f5e2c75ea436e12a3781c959b7730942e900",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.475,
+    "ROC_AUC": 0.8476994758299359,
+    "MCC": 0.44923343015069067,
+    "Recall": 0.8529411764705882,
+    "G_mean": 0.7522050675176957,
+    "F1": 0.5979381443298969
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.8476994758299359,
+    "MCC": 0.43686640273309857,
+    "Recall": 0.7941176470588235,
+    "G_mean": 0.747155350800267,
+    "F1": 0.5934065934065934
+  },
+  "validation_f1": {
+    "threshold": 0.475,
+    "ROC_AUC": 0.8476994758299359,
+    "MCC": 0.44923343015069067,
+    "Recall": 0.8529411764705882,
+    "G_mean": 0.7522050675176957,
+    "F1": 0.5979381443298969
+  }
+}
