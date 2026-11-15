@@ -18,3 +18,4 @@ jobs:
       - run: python scripts/verify_snapshot.py
       - run: python scripts/verify_flr_publication.py
       - run: python scripts/verify_native_fedcpdp_publication.py
+      - run: python scripts/verify_almity_publication.py

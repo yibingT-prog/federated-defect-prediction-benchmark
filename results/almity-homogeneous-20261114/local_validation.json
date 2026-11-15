@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-14",
+  "status": "passed",
+  "full_verified_runs": 2,
+  "full_matrix_expected": 300,
+  "full_jobs": [
+    {
+      "target": "ar5",
+      "seed": 0,
+      "rounds": 100
+    },
+    {
+      "target": "ar5",
+      "seed": 1,
+      "rounds": 100
+    }
+  ],
+  "scheduler_subset_completed": [
+    [
+      "ar5",
+      0
+    ],
+    [
+      "ar5",
+      1
+    ]
+  ],
+  "scheduler_failed": [],
+  "scheduler_completed_skip_test": true,
+  "full_experiment_completed": false,
+  "cloud_execution_started": false,
+  "data_rows": 15901
+}

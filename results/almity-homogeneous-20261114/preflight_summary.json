@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "smoke_targets": 30,
+  "smoke_rounds": 2,
+  "full_pilot": {
+    "target": "ar5",
+    "seed": 0,
+    "rounds": 100
+  },
+  "resume": {
+    "interruption_after_round": 2,
+    "final_round": 100,
+    "weights_bitwise_equal": true,
+    "predictions_byte_equal": true
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.5",
+  "packages": {
+    "numpy": "2.3.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.2",
+    "sklearn": "1.7.2"
+  },
+  "linux_execution_tested": false
+}

@@ -1,0 +1,48 @@
+{
+  "method": "ALMITY-linear-SVM-paper-reimplementation",
+  "target": "synapse-1.2",
+  "family": "PROMISE",
+  "seed": 6,
+  "rounds": 100,
+  "fingerprint": "61c2a5af558b6622ac285c40335886fdcbf601f41223315e1d95d829e65c5355",
+  "study": {
+    "threshold": 0.2,
+    "ROC_AUC": 0.749452804377565,
+    "MCC": 0.36800419127996614,
+    "Recall": 0.872093023255814,
+    "G_mean": 0.6642111641550714,
+    "F1": 0.6122448979591837
+  },
+  "fixed_probability": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.749452804377565,
+    "MCC": 0.1525169822730907,
+    "Recall": 0.1511627906976744,
+    "G_mean": 0.37718809874266357,
+    "F1": 0.23853211009174313
+  },
+  "native_margin": {
+    "threshold": 0.0,
+    "ROC_AUC": 0.749452804377565,
+    "MCC": 0.1394794152142393,
+    "Recall": 0.10465116279069768,
+    "G_mean": 0.3177382450056356,
+    "F1": 0.1782178217821782
+  },
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "calibration": {
+    "slope": 1.8952744639218784,
+    "intercept": 0.3116618644298906,
+    "fit": "pooled source validation only; reused for threshold selection",
+    "warning": "Calibration is an evaluation adaptation, not a verified original ALMITY component"
+  }
+}

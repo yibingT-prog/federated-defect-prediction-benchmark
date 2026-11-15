@@ -1,0 +1,48 @@
+{
+  "method": "ALMITY-linear-SVM-paper-reimplementation",
+  "target": "ar3",
+  "family": "SOFTLAB",
+  "seed": 6,
+  "rounds": 100,
+  "fingerprint": "4a5a8f7978965f5d3c6bceb8f40da0d068bb1ed7af73e4396c0aa370d7312bdd",
+  "study": {
+    "threshold": 0.175,
+    "ROC_AUC": 0.1431818181818182,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "fixed_probability": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.1431818181818182,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "native_margin": {
+    "threshold": 0.0,
+    "ROC_AUC": 0.8568181818181818,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "effort": {
+    "CostEffect@5": 0.125,
+    "Popt@5": 0.14409084056117188,
+    "CostEffect@10": 0.1668604651162791,
+    "Popt@10": 0.21411971978276897,
+    "CostEffect@20": 0.25,
+    "Popt@20": 0.3125749589121429,
+    "CostEffect@40": 0.25,
+    "Popt@40": 0.28997892583754303
+  },
+  "calibration": {
+    "slope": -0.021722937957960015,
+    "intercept": -1.6684100760932647,
+    "fit": "pooled source validation only; reused for threshold selection",
+    "warning": "Calibration is an evaluation adaptation, not a verified original ALMITY component"
+  }
+}

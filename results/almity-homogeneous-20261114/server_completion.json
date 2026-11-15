@@ -1,0 +1,9 @@
+{
+  "status": "completed_and_verified",
+  "verified_runs": 300,
+  "failed": 0,
+  "rounds_per_run": 100,
+  "protocol": "rq1-project-lopo-local-groups-v3",
+  "verified_at": "2026-11-14T19:45:36.231392+08:00",
+  "server_directory": "/root/almity/almity-svm-server-20261114"
+}

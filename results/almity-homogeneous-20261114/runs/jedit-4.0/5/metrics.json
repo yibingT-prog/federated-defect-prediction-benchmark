@@ -1,0 +1,48 @@
+{
+  "method": "ALMITY-linear-SVM-paper-reimplementation",
+  "target": "jedit-4.0",
+  "family": "PROMISE",
+  "seed": 5,
+  "rounds": 100,
+  "fingerprint": "a18efea8182a6a705fcb667abc0157a9af693757a393b02cd66d4b8e55031e47",
+  "study": {
+    "threshold": 0.27499999999999997,
+    "ROC_AUC": 0.6941702741702741,
+    "MCC": 0.22489994702293556,
+    "Recall": 0.24,
+    "G_mean": 0.47152694762618,
+    "F1": 0.32727272727272727
+  },
+  "fixed_probability": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.6941702741702741,
+    "MCC": 0.19339751136609126,
+    "Recall": 0.06666666666666667,
+    "G_mean": 0.25763941153881403,
+    "F1": 0.12345679012345678
+  },
+  "native_margin": {
+    "threshold": 0.0,
+    "ROC_AUC": 0.6941702741702741,
+    "MCC": 0.1662657587758601,
+    "Recall": 0.05333333333333334,
+    "G_mean": 0.23043969515353277,
+    "F1": 0.1
+  },
+  "effort": {
+    "CostEffect@5": 0.18666666666666668,
+    "Popt@5": 0.3713265347849996,
+    "CostEffect@10": 0.26666666666666666,
+    "Popt@10": 0.3842225265935367,
+    "CostEffect@20": 0.40849190938511337,
+    "Popt@20": 0.4264512541477319,
+    "CostEffect@40": 0.7759216105469446,
+    "Popt@40": 0.5611074722887699
+  },
+  "calibration": {
+    "slope": 1.624941984487201,
+    "intercept": 0.04796402841526568,
+    "fit": "pooled source validation only; reused for threshold selection",
+    "warning": "Calibration is an evaluation adaptation, not a verified original ALMITY component"
+  }
+}

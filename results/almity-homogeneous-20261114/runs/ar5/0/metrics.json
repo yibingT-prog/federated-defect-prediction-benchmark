@@ -1,0 +1,48 @@
+{
+  "method": "ALMITY-linear-SVM-paper-reimplementation",
+  "target": "ar5",
+  "family": "SOFTLAB",
+  "seed": 0,
+  "rounds": 100,
+  "fingerprint": "03b8aa7a67861229d373279565848cd6e474ce8011a0f5fbc485d138f030aa47",
+  "study": {
+    "threshold": 0.175,
+    "ROC_AUC": 0.08482142857142858,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "fixed_probability": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.08482142857142858,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "native_margin": {
+    "threshold": 0.0,
+    "ROC_AUC": 0.9151785714285714,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "effort": {
+    "CostEffect@5": 0.0,
+    "Popt@5": 0.0,
+    "CostEffect@10": 0.0,
+    "Popt@10": 0.0,
+    "CostEffect@20": 0.10306122448979602,
+    "Popt@20": 0.010827373844886221,
+    "CostEffect@40": 0.25,
+    "Popt@40": 0.1654657972673271
+  },
+  "calibration": {
+    "slope": -0.06133408719267889,
+    "intercept": -1.7945451284645326,
+    "fit": "pooled source validation only; reused for threshold selection",
+    "warning": "Calibration is an evaluation adaptation, not a verified original ALMITY component"
+  }
+}

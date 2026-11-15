@@ -1,0 +1,48 @@
+{
+  "method": "ALMITY-linear-SVM-paper-reimplementation",
+  "target": "MW1",
+  "family": "NASA",
+  "seed": 9,
+  "rounds": 100,
+  "fingerprint": "b56decf70d379244e79ce162acd96dcb3e3ea82f79cf88b06a5ff048d8c27a12",
+  "study": {
+    "threshold": 0.15,
+    "ROC_AUC": 0.35119632907243525,
+    "MCC": -0.06638256112773344,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "fixed_probability": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.35119632907243525,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "native_margin": {
+    "threshold": 0.0,
+    "ROC_AUC": 0.35119632907243525,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "effort": {
+    "CostEffect@5": 0.07407407407407407,
+    "Popt@5": 0.08494145440308326,
+    "CostEffect@10": 0.1111111111111111,
+    "Popt@10": 0.1323267419408794,
+    "CostEffect@20": 0.2222222222222222,
+    "Popt@20": 0.16484685724606102,
+    "CostEffect@40": 0.37037037037037035,
+    "Popt@40": 0.23597830476622594
+  },
+  "calibration": {
+    "slope": 2.437155425472159,
+    "intercept": 0.5984982492479891,
+    "fit": "pooled source validation only; reused for threshold selection",
+    "warning": "Calibration is an evaluation adaptation, not a verified original ALMITY component"
+  }
+}

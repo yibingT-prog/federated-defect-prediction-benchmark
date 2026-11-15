@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "matched_targets": 30,
+  "matched_source_client_splits": 198,
+  "data_hashes_equal": true,
+  "project_sources_features_equal": true,
+  "all_original_row_indices_equal": true,
+  "normalized_features_equal_after_float32_cast": true,
+  "target_labels_and_raw_loc_equal": true,
+  "feature_dtype_difference": "ALMITY float64; historical FLR float32",
+  "claim": "Matched data protocol only; methods have different training budgets and evaluation adaptations",
+  "full_flr_rerun_required_solely_for_this_split_change": false
+}

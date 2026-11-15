@@ -1,0 +1,48 @@
+{
+  "method": "ALMITY-linear-SVM-paper-reimplementation",
+  "target": "Zxing",
+  "family": "Relink",
+  "seed": 6,
+  "rounds": 100,
+  "fingerprint": "1baef474c9ca71b34ab827f7d97ad0dc4964e55764616c74b7a068221d19db0d",
+  "study": {
+    "threshold": 0.6,
+    "ROC_AUC": 0.6549249050003015,
+    "MCC": 0.15337528503667042,
+    "Recall": 0.1271186440677966,
+    "G_mean": 0.3488410667807484,
+    "F1": 0.20689655172413793
+  },
+  "fixed_probability": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.6549249050003015,
+    "MCC": 0.10522246388337725,
+    "Recall": 0.2542372881355932,
+    "G_mean": 0.4611055981443804,
+    "F1": 0.30927835051546393
+  },
+  "native_margin": {
+    "threshold": 0.0,
+    "ROC_AUC": 0.6549249050003015,
+    "MCC": 0.10522246388337725,
+    "Recall": 0.2542372881355932,
+    "G_mean": 0.4611055981443804,
+    "F1": 0.30927835051546393
+  },
+  "effort": {
+    "CostEffect@5": 0.17796610169491525,
+    "Popt@5": 0.41493676883000036,
+    "CostEffect@10": 0.2542372881355932,
+    "Popt@10": 0.39436841999978023,
+    "CostEffect@20": 0.4915254237288136,
+    "Popt@20": 0.46344274765074756,
+    "CostEffect@40": 0.7457627118644068,
+    "Popt@40": 0.5871375548296729
+  },
+  "calibration": {
+    "slope": 0.4029072956286235,
+    "intercept": 0.006141316006347073,
+    "fit": "pooled source validation only; reused for threshold selection",
+    "warning": "Calibration is an evaluation adaptation, not a verified original ALMITY component"
+  }
+}

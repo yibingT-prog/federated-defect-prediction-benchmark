@@ -1,0 +1,65 @@
+{
+  "method": "ALMITY-linear-SVM-paper-reimplementation",
+  "not_author_code": true,
+  "protocol": "rq1-project-lopo-local-groups-v3",
+  "training": {
+    "rounds": 100,
+    "local_epochs": 5,
+    "batch_size": 32,
+    "lr": 0.01,
+    "l2": 0.0001,
+    "optimizer": "SGD without momentum",
+    "objective": "mean max(0,1-y*(x@w+b)) + l2/2 * ||w||^2",
+    "initialization": "zero",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "participation": 1.0
+  },
+  "aggregation": "Eq 2-6: normalize Phi * Shannon_entropy_balance * global_minority_count_share; training records only",
+  "data": {
+    "version": "Pinned FedCPDP 30 CSV release, not claimed latest project versions",
+    "source_split": "Each source client independently: first feasible five-fold StratifiedGroupKFold, random_state=20261110; ~80/20; exact same row indices as frozen FLR 20261111; all model seeds share splits",
+    "target": "all original rows; labels final evaluation only",
+    "normalization": "source train minmax; validation same scale; target own unlabeled minmax",
+    "oversampling": false,
+    "public_auxiliary_pool": false,
+    "cross_client_feature_grouping": false,
+    "within_client_feature_grouping": true,
+    "exclude_source_target_identical_features": true,
+    "split_reference": "split_reference/*_splits.json; copied from completed FLR homogeneous run 20261111; verified by regeneration",
+    "clients": "one source project per client; same-family leave-one-project-out; one pinned CSV version per project",
+    "project_isolation_basis": "FLR PDF p5 / FedDP PDF p11: exclude all versions of held-out target project; our snapshot contains one version per project"
+  },
+  "evaluation": {
+    "model_selection": "last round100",
+    "calibration": "sigmoid logistic calibration on pooled source validation margins, C1; same validation used for threshold selection; added evaluation adapter, not original ALMITY",
+    "threshold": "source macro MCC then macro Recall then lower threshold, .05 to .95 step .025",
+    "native": "raw SVM margin >=0 also reported; raw-margin AUC retained",
+    "effort": "calibrated probability/raw LOC; fractional-budget interpolation; no valid LOC -> N/A"
+  },
+  "evidence": {
+    "paper": "https://zpgao.github.io/papers/Federated_Learning_for_Software_Engineering.pdf",
+    "unavailable_replication": "https://anonymous.4open.science/r/ALMITY-20B5",
+    "verified": "SVM branch and aggregation Eq2-6",
+    "unverified": "Original SVM kernel, optimizer, complete training hyperparameters"
+  },
+  "limitations": [
+    "All chosen training hyperparameters are study settings, not paper defaults",
+    "Cross-project LOPO differs from ALMITY within-client 80/10/10",
+    "One pinned CSV per project differs from original FLR/FedDP use of multiple source versions",
+    "Source held-out validation and local duplicate grouping/exclusion are study choices, not claimed FLR/FedDP paper defaults",
+    "Cross-client identical feature records may occur in train and validation; no global disjointness claim",
+    "No formal epsilon/delta guarantee",
+    "Prior v2 ALMITY splits differ; do not mix v2 results into this experiment"
+  ]
+}
