@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "jedit-4.0",
+    "seed": 6,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "jedit-4.0",
+  "seed": 6,
+  "rounds": 50,
+  "threshold": 0.2,
+  "metrics": {
+    "ROC_AUC": 0.750392464678179,
+    "MCC": 0.2849148202583159,
+    "Recall": 0.6923076923076923,
+    "G_mean": 0.6723981776166309,
+    "F1": 0.46153846153846156,
+    "CostEffect@5": 0.15384615384615385,
+    "Popt@5": 0.2337689984250718,
+    "CostEffect@10": 0.23076923076923078,
+    "Popt@10": 0.2694306873192754,
+    "CostEffect@20": 0.38461538461538464,
+    "Popt@20": 0.4124931449717521,
+    "CostEffect@40": 0.5821136609869004,
+    "Popt@40": 0.5087602461520447
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.750392464678179,
+    "MCC": 0.44222575688602306,
+    "Recall": 0.38461538461538464,
+    "G_mean": 0.6073852134257353,
+    "F1": 0.5
+  },
+  "test_n": 62,
+  "support_n": 244,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": true,
+  "completed_unix": 1794808869.495092,
+  "train_seconds": 9.60759711265564
+}

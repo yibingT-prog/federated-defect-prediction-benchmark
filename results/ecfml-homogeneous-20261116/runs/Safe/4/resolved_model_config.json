@@ -1,0 +1,119 @@
+{
+  "paper": {
+    "title": "A privacy-preserving federated meta-learning framework for cross-project defect prediction in software systems",
+    "method": "ECFML",
+    "dataset": "AEEEM",
+    "targets": [
+      "PDE",
+      "JDT",
+      "EQ"
+    ]
+  },
+  "data": {
+    "raw_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "projects": [
+      "EQ",
+      "JDT",
+      "PDE"
+    ],
+    "expected": {
+      "EQ": {
+        "features": 61,
+        "samples": 324,
+        "defects": 129,
+        "imbalance_ratio": 1.51
+      },
+      "JDT": {
+        "features": 61,
+        "samples": 997,
+        "defects": 206,
+        "imbalance_ratio": 3.84
+      },
+      "PDE": {
+        "features": 61,
+        "samples": 1497,
+        "defects": 209,
+        "imbalance_ratio": 6.16
+      }
+    },
+    "label_column": null,
+    "non_feature_columns": [
+      "classname"
+    ],
+    "missing_column_threshold": 0.5,
+    "scaling": "standard",
+    "test_size": 0.2
+  },
+  "model": {
+    "input_dim": 26,
+    "token_length": 18,
+    "embedding_dim": 64,
+    "conv_channels": 64,
+    "conv_kernel_size": 3,
+    "transformer_heads": 4,
+    "transformer_layers": 1,
+    "transformer_ff_dim": 256,
+    "dropout": 0.0,
+    "classifier_hidden_dim": 62,
+    "activation": "softsign",
+    "num_classes": 2
+  },
+  "training": {
+    "seed": 4,
+    "epochs": 50,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "inner_learning_rate": 0.001,
+    "optimizer": "adam",
+    "inner_optimizer": "sgd",
+    "inner_steps": 1,
+    "target_adaptation_steps": 1,
+    "support_query_split": 0.5,
+    "support_query_sampling": "random",
+    "class_weighting": "none",
+    "device": "cpu"
+  },
+  "federated": {
+    "client_sampling_fraction": 1.0,
+    "communication_rounds": 50,
+    "train_on_target_project": false,
+    "aggregation_mode": "meta_gradient"
+  },
+  "privacy": {
+    "enabled": true,
+    "epsilon": 1.0,
+    "clipping_bound": 0.0001,
+    "clipping_mode": "per_coordinate"
+  },
+  "evaluation": {
+    "threshold_strategy": "fixed_0.5"
+  },
+  "reproduction_notes": {
+    "paper_explicit": [
+      "Python 3.11",
+      "80/20 train-test split",
+      "learning rate 0.001",
+      "batch size 32",
+      "epochs 50",
+      "random seed 42",
+      "Laplace DP epsilon 1.0",
+      "first-order MAML with K=1",
+      "Conv1D kernel size 3",
+      "Softsign activation"
+    ],
+    "assumptions_not_reported_by_paper": [
+      "token_length",
+      "embedding_dim",
+      "conv_channels",
+      "transformer_heads",
+      "transformer_layers",
+      "transformer_ff_dim",
+      "dropout",
+      "classifier_hidden_dim",
+      "clipping_bound",
+      "support_query_split",
+      "client_sampling_fraction"
+    ]
+  }
+}

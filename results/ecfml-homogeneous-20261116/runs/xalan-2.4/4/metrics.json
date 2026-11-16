@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "xalan-2.4",
+    "seed": 4,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "xalan-2.4",
+  "seed": 4,
+  "rounds": 50,
+  "threshold": 0.22499999999999998,
+  "metrics": {
+    "ROC_AUC": 0.6244700181708055,
+    "MCC": 0.15095817597306088,
+    "Recall": 0.6153846153846154,
+    "G_mean": 0.6264897448190322,
+    "F1": 0.23880597014925373,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.6244700181708055,
+    "MCC": 0.12574444744117994,
+    "Recall": 0.38461538461538464,
+    "G_mean": 0.5530598766273591,
+    "F1": 0.22727272727272727
+  },
+  "test_n": 140,
+  "support_n": 583,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": false,
+  "completed_unix": 1794808526.1649067,
+  "train_seconds": 8.702046394348145
+}

@@ -1,0 +1,11 @@
+{
+  "round": 50,
+  "total": 50,
+  "updated_unix": 1794808821.0842297,
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "ant-1.7",
+    "seed": 6,
+    "rounds": 50
+  }
+}

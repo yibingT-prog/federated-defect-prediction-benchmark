@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "PDE",
+    "seed": 0,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "AEEEM",
+  "target": "PDE",
+  "seed": 0,
+  "rounds": 50,
+  "threshold": 0.32499999999999996,
+  "metrics": {
+    "ROC_AUC": 0.7935138081395349,
+    "MCC": 0.43209090721242494,
+    "Recall": 0.3488372093023256,
+    "G_mean": 0.5824935122904504,
+    "F1": 0.46153846153846156,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.7935138081395349,
+    "MCC": 0.14525704747125584,
+    "Recall": 0.06976744186046512,
+    "G_mean": 0.2625830433427924,
+    "F1": 0.12244897959183673
+  },
+  "test_n": 299,
+  "support_n": 1198,
+  "private_clients": 4,
+  "public_n": 0,
+  "effort_valid": false,
+  "completed_unix": 1794807616.9961545,
+  "train_seconds": 3.0050158500671387
+}

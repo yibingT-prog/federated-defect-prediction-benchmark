@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "ivy-2.0",
+    "seed": 2,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "ivy-2.0",
+  "seed": 2,
+  "rounds": 50,
+  "threshold": 0.3,
+  "metrics": {
+    "ROC_AUC": 0.8194444444444444,
+    "MCC": 0.41960874688224437,
+    "Recall": 0.875,
+    "G_mean": 0.8079466429027216,
+    "F1": 0.45161290322580644,
+    "CostEffect@5": 0.125,
+    "Popt@5": 0.4083572154935125,
+    "CostEffect@10": 0.125,
+    "Popt@10": 0.3123877597011543,
+    "CostEffect@20": 0.19491803278688524,
+    "Popt@20": 0.24305921604522693,
+    "CostEffect@40": 0.5,
+    "Popt@40": 0.40735478100218037
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.8194444444444444,
+    "MCC": 0.49596668842165154,
+    "Recall": 0.625,
+    "G_mean": 0.7585491581939996,
+    "F1": 0.5555555555555556
+  },
+  "test_n": 71,
+  "support_n": 281,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": true,
+  "completed_unix": 1794808058.4357207,
+  "train_seconds": 11.353078365325928
+}

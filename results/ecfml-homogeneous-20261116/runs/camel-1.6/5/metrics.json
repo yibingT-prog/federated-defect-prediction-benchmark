@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "camel-1.6",
+    "seed": 5,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "camel-1.6",
+  "seed": 5,
+  "rounds": 50,
+  "threshold": 0.2,
+  "metrics": {
+    "ROC_AUC": 0.6854406130268199,
+    "MCC": 0.2591903513555571,
+    "Recall": 0.6944444444444444,
+    "G_mean": 0.6601694894413647,
+    "F1": 0.43478260869565216,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.6854406130268199,
+    "MCC": 0.07879688507092227,
+    "Recall": 0.16666666666666666,
+    "G_mean": 0.38655567174253413,
+    "F1": 0.21052631578947367
+  },
+  "test_n": 181,
+  "support_n": 784,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": false,
+  "completed_unix": 1794808654.3976207,
+  "train_seconds": 8.730587482452393
+}

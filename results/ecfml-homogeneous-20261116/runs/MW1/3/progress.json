@@ -1,0 +1,11 @@
+{
+  "round": 50,
+  "total": 50,
+  "updated_unix": 1794808182.8481507,
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "MW1",
+    "seed": 3,
+    "rounds": 50
+  }
+}

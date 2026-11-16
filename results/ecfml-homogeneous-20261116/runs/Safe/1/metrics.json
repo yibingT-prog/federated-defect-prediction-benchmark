@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "Safe",
+    "seed": 1,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "Relink",
+  "target": "Safe",
+  "seed": 1,
+  "rounds": 50,
+  "threshold": 0.3,
+  "metrics": {
+    "ROC_AUC": 0.8611111111111112,
+    "MCC": 0.7071067811865476,
+    "Recall": 1.0,
+    "G_mean": 0.816496580927726,
+    "F1": 0.8571428571428571,
+    "CostEffect@5": 0.0,
+    "Popt@5": 0.0,
+    "CostEffect@10": 0.02185792349726777,
+    "Popt@10": 0.005347705291303718,
+    "CostEffect@20": 0.3363095238095238,
+    "Popt@20": 0.27350459970935875,
+    "CostEffect@40": 0.5350877192982456,
+    "Popt@40": 0.5731914667204219
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.8611111111111112,
+    "MCC": 0.50709255283711,
+    "Recall": 0.6666666666666666,
+    "G_mean": 0.7453559924999298,
+    "F1": 0.7272727272727273
+  },
+  "test_n": 12,
+  "support_n": 44,
+  "private_clients": 2,
+  "public_n": 0,
+  "effort_valid": true,
+  "completed_unix": 1794807803.7252693,
+  "train_seconds": 1.4764106273651123
+}

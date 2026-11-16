@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "xerces-1.3",
+    "seed": 9,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "xerces-1.3",
+  "seed": 9,
+  "rounds": 50,
+  "threshold": 0.25,
+  "metrics": {
+    "ROC_AUC": 0.7685185185185185,
+    "MCC": 0.2689571768199595,
+    "Recall": 0.5833333333333334,
+    "G_mean": 0.6675341578165509,
+    "F1": 0.3888888888888889,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.7685185185185185,
+    "MCC": 0.18856180831641267,
+    "Recall": 0.25,
+    "G_mean": 0.47871355387816905,
+    "F1": 0.2857142857142857
+  },
+  "test_n": 84,
+  "support_n": 369,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": false,
+  "completed_unix": 1794809528.6193974,
+  "train_seconds": 7.60964560508728
+}

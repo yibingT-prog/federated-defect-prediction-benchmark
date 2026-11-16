@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "MW1",
+    "seed": 9,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "NASA",
+  "target": "MW1",
+  "seed": 9,
+  "rounds": 50,
+  "threshold": 0.2,
+  "metrics": {
+    "ROC_AUC": 0.8928571428571428,
+    "MCC": 0.33766233766233766,
+    "Recall": 0.42857142857142855,
+    "G_mean": 0.6241877839323592,
+    "F1": 0.42857142857142855,
+    "CostEffect@5": 0.13226600985221676,
+    "Popt@5": 0.1490476909394676,
+    "CostEffect@10": 0.14285714285714285,
+    "Popt@10": 0.2619993318019729,
+    "CostEffect@20": 0.2250000000000001,
+    "Popt@20": 0.21551869099125687,
+    "CostEffect@40": 0.5714285714285714,
+    "Popt@40": 0.3859305311528585
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.8928571428571428,
+    "MCC": 0.0,
+    "Recall": 0.0,
+    "G_mean": 0.0,
+    "F1": 0.0
+  },
+  "test_n": 51,
+  "support_n": 202,
+  "private_clients": 4,
+  "public_n": 0,
+  "effort_valid": true,
+  "completed_unix": 1794809365.8461504,
+  "train_seconds": 3.0913853645324707
+}

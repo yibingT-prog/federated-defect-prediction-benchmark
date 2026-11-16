@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "Zxing",
+    "seed": 2,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "Relink",
+  "target": "Zxing",
+  "seed": 2,
+  "rounds": 50,
+  "threshold": 0.85,
+  "metrics": {
+    "ROC_AUC": 0.6629798308392973,
+    "MCC": 0.22395104370730184,
+    "Recall": 0.3448275862068966,
+    "G_mean": 0.5410897700310648,
+    "F1": 0.425531914893617,
+    "CostEffect@5": 0.10344827586206896,
+    "Popt@5": 0.2100660756955891,
+    "CostEffect@10": 0.1724137931034483,
+    "Popt@10": 0.27358733111579037,
+    "CostEffect@20": 0.3298063297118564,
+    "Popt@20": 0.3817359466211472,
+    "CostEffect@40": 0.5575149134293613,
+    "Popt@40": 0.5088013934512783
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.6629798308392973,
+    "MCC": 0.31754284406845595,
+    "Recall": 0.5862068965517241,
+    "G_mean": 0.6567798655578687,
+    "F1": 0.5666666666666667
+  },
+  "test_n": 82,
+  "support_n": 317,
+  "private_clients": 2,
+  "public_n": 0,
+  "effort_valid": true,
+  "completed_unix": 1794808001.8979907,
+  "train_seconds": 1.4614100456237793
+}

@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "log4j-1.0",
+    "seed": 6,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "log4j-1.0",
+  "seed": 6,
+  "rounds": 50,
+  "threshold": 0.175,
+  "metrics": {
+    "ROC_AUC": 0.7428571428571428,
+    "MCC": 0.35906624935876585,
+    "Recall": 0.8571428571428571,
+    "G_mean": 0.6866065623255951,
+    "F1": 0.5454545454545454,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.7428571428571428,
+    "MCC": 0.15537971921347116,
+    "Recall": 0.14285714285714285,
+    "G_mean": 0.3683941988065036,
+    "F1": 0.2222222222222222
+  },
+  "test_n": 27,
+  "support_n": 108,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": false,
+  "completed_unix": 1794808873.6277566,
+  "train_seconds": 9.770529985427856
+}

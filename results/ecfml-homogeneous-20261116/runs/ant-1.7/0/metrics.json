@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "ant-1.7",
+    "seed": 0,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "ant-1.7",
+  "seed": 0,
+  "rounds": 50,
+  "threshold": 0.35,
+  "metrics": {
+    "ROC_AUC": 0.8462264150943395,
+    "MCC": 0.46966487083820535,
+    "Recall": 0.525,
+    "G_mean": 0.6895445584682744,
+    "F1": 0.5915492957746479,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.8462264150943395,
+    "MCC": 0.35577929713801104,
+    "Recall": 0.325,
+    "G_mean": 0.5537181355029882,
+    "F1": 0.4406779661016949
+  },
+  "test_n": 146,
+  "support_n": 599,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": false,
+  "completed_unix": 1794807631.5129237,
+  "train_seconds": 7.564009189605713
+}

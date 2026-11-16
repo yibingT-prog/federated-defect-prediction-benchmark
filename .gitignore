@@ -29,6 +29,11 @@ experiments/**/STOP
 experiments/**/prepared/
 experiments/**/pilot/
 experiments/**/wheelhouse/
+experiments/**/scheduler.lock
+experiments/**/all_runs.csv
+experiments/**/project_summary.csv
+experiments/**/family_summary.csv
+experiments/**/verification.json
 datasets/raw/
 outputs/
 build/

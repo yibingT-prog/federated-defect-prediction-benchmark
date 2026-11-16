@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "Apache",
+    "seed": 8,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "Relink",
+  "target": "Apache",
+  "seed": 8,
+  "rounds": 50,
+  "threshold": 0.6,
+  "metrics": {
+    "ROC_AUC": 0.6296296296296297,
+    "MCC": 0.1956151991089879,
+    "Recall": 0.16666666666666666,
+    "G_mean": 0.3984095364447979,
+    "F1": 0.2727272727272727,
+    "CostEffect@5": 0.16666666666666666,
+    "Popt@5": 0.3368759713758583,
+    "CostEffect@10": 0.2478305785123967,
+    "Popt@10": 0.40791749678677564,
+    "CostEffect@20": 0.46987249544626597,
+    "Popt@20": 0.4850874453917046,
+    "CostEffect@40": 0.7222854733291166,
+    "Popt@40": 0.6824572592384396
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.6296296296296297,
+    "MCC": 0.1956151991089879,
+    "Recall": 0.16666666666666666,
+    "G_mean": 0.3984095364447979,
+    "F1": 0.2727272727272727
+  },
+  "test_n": 39,
+  "support_n": 155,
+  "private_clients": 2,
+  "public_n": 0,
+  "effort_valid": true,
+  "completed_unix": 1794809128.7633588,
+  "train_seconds": 2.1939103603363037
+}

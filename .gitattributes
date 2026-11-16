@@ -5,3 +5,5 @@ experiments/homogeneous/flr-tff-20261111/** -text
 results/** -text
 experiments/homogeneous/fedcpdp-native-20261114/** -text
 experiments/homogeneous/almity-svm-20261114/** -text
+experiments/homogeneous/ecfml-resource-20261116/** -text
+experiments/homogeneous/feddp-resource-20261116/** -text

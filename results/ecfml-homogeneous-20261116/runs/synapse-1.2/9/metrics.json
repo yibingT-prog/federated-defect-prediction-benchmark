@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "fingerprint": "cb7f199b7b44a5c4319b346e845849f226caefee8531298756754838b6531472",
+    "target": "synapse-1.2",
+    "seed": 9,
+    "rounds": 50
+  },
+  "method": "ecfml",
+  "family": "PROMISE",
+  "target": "synapse-1.2",
+  "seed": 9,
+  "rounds": 50,
+  "threshold": 0.25,
+  "metrics": {
+    "ROC_AUC": 0.823529411764706,
+    "MCC": 0.3883773888445566,
+    "Recall": 0.6470588235294118,
+    "G_mean": 0.6997614855970284,
+    "F1": 0.5945945945945946,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.823529411764706,
+    "MCC": 0.3387999020202087,
+    "Recall": 0.35294117647058826,
+    "G_mean": 0.5694947974514994,
+    "F1": 0.46153846153846156
+  },
+  "test_n": 54,
+  "support_n": 202,
+  "private_clients": 11,
+  "public_n": 0,
+  "effort_valid": false,
+  "completed_unix": 1794809495.2959394,
+  "train_seconds": 10.232392072677612
+}
