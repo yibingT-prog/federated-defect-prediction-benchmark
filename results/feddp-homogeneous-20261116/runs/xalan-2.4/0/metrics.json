@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "fingerprint": "e6ee8c081b676ddf39a906d8bc38a847db4a8379a53caeaf1182f13552d4c06f",
+    "target": "xalan-2.4",
+    "seed": 0,
+    "rounds": 50
+  },
+  "method": "feddp",
+  "family": "PROMISE",
+  "target": "xalan-2.4",
+  "seed": 0,
+  "rounds": 50,
+  "threshold": 0.35,
+  "metrics": {
+    "ROC_AUC": 0.7664985911315437,
+    "MCC": 0.2450459801110361,
+    "Recall": 0.8909090909090909,
+    "G_mean": 0.6275829025474836,
+    "F1": 0.3563636363636364,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.7664985911315437,
+    "MCC": 0.32363977836600805,
+    "Recall": 0.7545454545454545,
+    "G_mean": 0.7181571320544194,
+    "F1": 0.4289405684754522
+  },
+  "test_n": 723,
+  "support_n": 0,
+  "private_clients": 10,
+  "public_n": 965,
+  "effort_valid": false,
+  "completed_unix": 1794808252.794052,
+  "train_seconds": 39.7218279838562,
+  "last10_native_mean": {
+    "ROC_AUC": 0.7659394928073558,
+    "MCC": 0.32236078263050216,
+    "Recall": 0.7545454545454546,
+    "G_mean": 0.7173847642919285,
+    "F1": 0.4279490048298487
+  }
+}

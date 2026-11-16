@@ -1,0 +1,10 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "torch": "2.5.1+cpu",
+  "cuda": false,
+  "numpy": "2.3.3",
+  "pandas": "2.3.3",
+  "sklearn": "1.7.2"
+}

@@ -19,3 +19,5 @@ jobs:
       - run: python scripts/verify_flr_publication.py
       - run: python scripts/verify_native_fedcpdp_publication.py
       - run: python scripts/verify_almity_publication.py
+      - run: python scripts/verify_resource_publication.py --method ecfml
+      - run: python scripts/verify_resource_publication.py --method feddp

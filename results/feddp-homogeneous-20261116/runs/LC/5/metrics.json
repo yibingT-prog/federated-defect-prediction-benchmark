@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "fingerprint": "e6ee8c081b676ddf39a906d8bc38a847db4a8379a53caeaf1182f13552d4c06f",
+    "target": "LC",
+    "seed": 5,
+    "rounds": 50
+  },
+  "method": "feddp",
+  "family": "AEEEM",
+  "target": "LC",
+  "seed": 5,
+  "rounds": 50,
+  "threshold": 0.725,
+  "metrics": {
+    "ROC_AUC": 0.7616128389154705,
+    "MCC": 0.3699738514392237,
+    "Recall": 0.46875,
+    "G_mean": 0.6596269062905123,
+    "F1": 0.4316546762589928,
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.7616128389154705,
+    "MCC": 0.2559122533117392,
+    "Recall": 0.578125,
+    "G_mean": 0.6789880123339012,
+    "F1": 0.32456140350877194
+  },
+  "test_n": 691,
+  "support_n": 0,
+  "private_clients": 3,
+  "public_n": 1862,
+  "effort_valid": false,
+  "completed_unix": 1794809110.8113825,
+  "train_seconds": 27.43940567970276,
+  "last10_native_mean": {
+    "ROC_AUC": 0.7610920055821372,
+    "MCC": 0.2630521318535691,
+    "Recall": 0.5921875,
+    "G_mean": 0.6863636779069366,
+    "F1": 0.32943448580032136
+  }
+}

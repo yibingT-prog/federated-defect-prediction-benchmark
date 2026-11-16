@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "fingerprint": "e6ee8c081b676ddf39a906d8bc38a847db4a8379a53caeaf1182f13552d4c06f",
+    "target": "ar4",
+    "seed": 7,
+    "rounds": 50
+  },
+  "method": "feddp",
+  "family": "SOFTLAB",
+  "target": "ar4",
+  "seed": 7,
+  "rounds": 50,
+  "threshold": 0.49999999999999994,
+  "metrics": {
+    "ROC_AUC": 0.7505747126436781,
+    "MCC": 0.38268581730812906,
+    "Recall": 0.4,
+    "G_mean": 0.6102571532587293,
+    "F1": 0.47058823529411764,
+    "CostEffect@5": 0.05,
+    "Popt@5": 0.02179709654209168,
+    "CostEffect@10": 0.05,
+    "Popt@10": 0.08130687253072802,
+    "CostEffect@20": 0.15,
+    "Popt@20": 0.16411059917803736,
+    "CostEffect@40": 0.3386335403726709,
+    "Popt@40": 0.20943848096788656
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.7505747126436781,
+    "MCC": 0.38268581730812906,
+    "Recall": 0.4,
+    "G_mean": 0.6102571532587293,
+    "F1": 0.47058823529411764
+  },
+  "test_n": 107,
+  "support_n": 0,
+  "private_clients": 3,
+  "public_n": 121,
+  "effort_valid": true,
+  "completed_unix": 1794809544.0607243,
+  "train_seconds": 4.083307504653931,
+  "last10_native_mean": {
+    "ROC_AUC": 0.7545977011494251,
+    "MCC": 0.39878806056873417,
+    "Recall": 0.395,
+    "G_mean": 0.6092958839209122,
+    "F1": 0.4772615864527629
+  }
+}

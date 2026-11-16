@@ -8,6 +8,8 @@ The four research-question directories reserve the intended organization. Their 
 
 Every future run should record: method and paper, upstream revision/license, native classifier, feature schema, target label access, public data use, data release and hashes, split IDs, preprocessing fit scope, training and noise seeds, protocol checksum, environment, individual predictions, LOC, metrics, elapsed time and failure reasons.
 
-Store small reviewed project-level result summaries under `results/<experiment-id>/`. Keep raw datasets, per-instance outputs, checkpoints and temporary outputs outside Git. A later release of those artifacts requires its own data-rights and disclosure review. Never publish credentials or local environment files.
+Store reviewed summaries, numeric target/validation predictions, row-index audits and training histories under `results/<experiment-id>/`, as included in the explicitly requested completed-experiment releases. Keep raw dataset files, model binaries, logs and temporary runs outside Git; record their hashes when needed. Published version-only environment manifests support reproduction; credentials, SSH keys and secret-bearing `.env` files must never be published.
 
 Different methods are complete systems; rankings are not causal estimates of aggregation algorithms. Separate unmatched target-label or resource conditions. Preserve independent repeats separately from ensembles and noise repeats.
+
+The 2026-11-16 releases use separate `ecfml-resource-20261116` and `feddp-resource-20261116` code directories and separate result directories. ECFML has labeled target support/query adaptation; FedDP has independent public-project distillation and only 23 eligible targets. Their full mechanisms, exclusions, implementation assumptions and executed source hashes are documented locally to each experiment. These releases do not change the earlier FLR, ALMITY or FedCPDP evidence.

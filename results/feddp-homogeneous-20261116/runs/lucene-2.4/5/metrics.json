@@ -1,0 +1,50 @@
+{
+  "identity": {
+    "fingerprint": "e6ee8c081b676ddf39a906d8bc38a847db4a8379a53caeaf1182f13552d4c06f",
+    "target": "lucene-2.4",
+    "seed": 5,
+    "rounds": 50
+  },
+  "method": "feddp",
+  "family": "PROMISE",
+  "target": "lucene-2.4",
+  "seed": 5,
+  "rounds": 50,
+  "threshold": 0.39999999999999997,
+  "metrics": {
+    "ROC_AUC": 0.6679011901765488,
+    "MCC": 0.2253844407159399,
+    "Recall": 0.6305418719211823,
+    "G_mean": 0.6143326656377738,
+    "F1": 0.6632124352331606,
+    "CostEffect@5": 0.33497536945812806,
+    "Popt@5": 0.7289171396737318,
+    "CostEffect@10": 0.4630541871921182,
+    "Popt@10": 0.7674549880040138,
+    "CostEffect@20": 0.6138653186495757,
+    "Popt@20": 0.78975919919761,
+    "CostEffect@40": 0.7889470886345111,
+    "Popt@40": 0.8301276734326584
+  },
+  "native_threshold_metrics": {
+    "ROC_AUC": 0.6679011901765488,
+    "MCC": 0.2622290975469593,
+    "Recall": 0.5024630541871922,
+    "G_mean": 0.6176016576711566,
+    "F1": 0.6035502958579881
+  },
+  "test_n": 340,
+  "support_n": 0,
+  "private_clients": 10,
+  "public_n": 965,
+  "effort_valid": true,
+  "completed_unix": 1794809210.219396,
+  "train_seconds": 44.3605055809021,
+  "last10_native_mean": {
+    "ROC_AUC": 0.6692567689043905,
+    "MCC": 0.27327436710757813,
+    "Recall": 0.5044334975369459,
+    "G_mean": 0.6223658910654064,
+    "F1": 0.6073566299028522
+  }
+}

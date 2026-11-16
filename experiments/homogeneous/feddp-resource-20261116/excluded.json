@@ -1,0 +1,9 @@
+{
+  "ML": "Reserved public project, not a private client or a target.",
+  "PC4": "Reserved public project, not a private client or a target.",
+  "camel-1.6": "Reserved public project, not a private client or a target.",
+  "Apache": "Fewer than two private source clients after independent public-project reservation.",
+  "Safe": "Fewer than two private source clients after independent public-project reservation.",
+  "Zxing": "Reserved public project, not a private client or a target.",
+  "ar1": "Reserved public project, not a private client or a target."
+}

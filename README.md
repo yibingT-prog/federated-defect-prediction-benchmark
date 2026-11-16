@@ -2,7 +2,16 @@
 
 Reproducible experiments comparing complete federated learning methods for software defect prediction. Native classifiers and core method mechanisms are preserved. The repository is intended to cover homogeneous features, heterogeneous features, privacy effects, and sensitivity analysis.
 
-**Current release:** four separately versioned completed experiments: historical [FedCPDP mixed-source LOPO](experiments/completed/fedcpdp-paper-lopo-20261110/) (90 seed models, 30 ensembles), [FLR homogeneous](experiments/homogeneous/flr-tff-20261111/) (300 models), and **[FedCPDP native homogeneous](experiments/homogeneous/fedcpdp-native-20261114/PUBLICATION.md)** (300 models, 50 rounds, author training-loss aggregation; completed 2026-11-15). See the [native results and analysis](results/fedcpdp-native-homogeneous-20261114/README.md). The prior server validation-loss variant is not this release. **[ALMITY linear SVM reimplementation](experiments/homogeneous/almity-svm-20261114/PUBLICATION.md)** is now published separately (300 models, 100 rounds; [results](results/almity-homogeneous-20261114/README.md)). It is not original author code. Multi-method rankings and sensitivity studies remain pending.
+**Current release:** six separately versioned completed experiments:
+
+- [FedCPDP mixed-source LOPO](experiments/completed/fedcpdp-paper-lopo-20261110/): historical 90 seed models and 30 ensembles.
+- [FLR homogeneous](experiments/homogeneous/flr-tff-20261111/): 300 models; [results](results/flr-homogeneous-20261111/README.md).
+- [FedCPDP native homogeneous](experiments/homogeneous/fedcpdp-native-20261114/PUBLICATION.md): 300 models, 50 rounds, author training-loss aggregation; [results](results/fedcpdp-native-homogeneous-20261114/README.md). The earlier server validation-loss variant is separate.
+- [ALMITY linear SVM reimplementation](experiments/homogeneous/almity-svm-20261114/PUBLICATION.md): 300 models, 100 rounds; [results](results/almity-homogeneous-20261114/README.md).
+- **[ECFML complete-mechanism reimplementation](experiments/homogeneous/ecfml-resource-20261116/PUBLICATION.md):** 300 models across five families, 50 rounds, **labeled target support adaptation**; [results](results/ecfml-homogeneous-20261116/README.md).
+- **[FedDP complete-mechanism reimplementation](experiments/homogeneous/feddp-resource-20261116/PUBLICATION.md):** 230 models across four eligible families, 50 rounds, **independent public distillation data**; [results](results/feddp-homogeneous-20261116/README.md). ReLink cannot retain two private clients after reserving public and target projects and is explicitly not applicable.
+
+ECFML and FedDP completed and passed prediction/model verification on 2026-11-16. These are declared reimplementations, not untouched author programs or exact paper-table replications. Target-label access, public resources, private source lists and test records differ between conditions; their aggregate scores do not form a controlled method ranking. Multi-method rankings and sensitivity studies remain pending.
 
 **FLR audit limitation:** 21 target tasks have cross-client source training/validation duplicate-feature overlap. Numerical results passed verification, but threshold selection can be affected. This historical experiment is published with limitations, not certified as a globally leakage-free final benchmark. See the [FLR results and analysis](results/flr-homogeneous-20261111/README.md). The FedCPDP run includes same-family sources and is not the final cross-family-only RQ2 benchmark.
 
@@ -16,6 +25,9 @@ experiments/
     vendor/fed_cpdp.py, vendor/LICENSE
   homogeneous/flr-tff-20261111/         # executed native-TFF FLR + frozen splits
   homogeneous/fedcpdp-native-20261114/  # author native training-loss aggregation
+  homogeneous/almity-svm-20261114/      # declared linear SVM reimplementation
+  homogeneous/ecfml-resource-20261116/  # target labeled support + held-out query
+  homogeneous/feddp-resource-20261116/  # independent public-project distillation
   heterogeneous/                       # RQ2 scope and admission requirements
   privacy/                             # RQ3 scope, not yet executed
   sensitivity/                         # RQ4 scope, not yet executed
@@ -23,6 +35,9 @@ datasets/                              # provenance and local preparation policy
 results/fedcpdp-paper-lopo-20261110/     # verified project-level metrics
 results/flr-homogeneous-20261111/        # separate FLR metrics, analysis and audit
 results/fedcpdp-native-homogeneous-20261114/ # 300 native models, metrics and predictions
+results/almity-homogeneous-20261114/     # 300 linear SVM models
+results/ecfml-homogeneous-20261116/      # 300 models, separate supervision condition
+results/feddp-homogeneous-20261116/      # 230 models, final-round and last-10 results
 scripts/                               # dataset preparation and integrity checks
 tests/                                 # small metric and split correctness checks
 docs/                                  # experiment design and reproduction notes
