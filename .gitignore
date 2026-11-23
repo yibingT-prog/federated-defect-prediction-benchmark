@@ -15,6 +15,10 @@ venv/
 *.rar
 *.pdf
 *.log
+!results/fedcpdp-privacy-utility-20261120/conditions/*/runs/*/*/console.log
+experiments/privacy/**/study.lock*
+experiments/privacy/**/study_status.json
+experiments/privacy/**/pilot_gate.json
 *.pid
 .DS_Store
 experiments/**/data/

@@ -1,0 +1,38 @@
+{
+  "conditions": [
+    "none",
+    "clip_only",
+    "sigma_0p1",
+    "sigma_0p25",
+    "sigma_0p5",
+    "sigma_1p0"
+  ],
+  "expected_runs": 1800,
+  "pilot": {
+    "target": "ar1",
+    "seed": 0,
+    "rounds": 50,
+    "runs": 6
+  },
+  "formal": {
+    "targets": 30,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "rounds": 50
+  },
+  "base_git_commit": "e99aacda94aed722e714dae249597de6429aac40",
+  "data_policy": "unchanged frozen v3; all target records evaluated; no cross-client regrouping",
+  "privacy_claim": "empirical native noise versus utility only",
+  "baseline": "none disables both clipping and noise; clip_only uses native clipping with zero noise",
+  "selection": "prescribed final round; source-validation threshold; never choose noise by target performance"
+}

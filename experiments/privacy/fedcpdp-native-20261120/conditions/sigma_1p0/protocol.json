@@ -1,0 +1,96 @@
+{
+  "status": "frozen_privacy_native_sweep",
+  "scope": "Within-family project LOPO; author native federated_round, no validation loss substitution",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "models": 300,
+  "target": "All target records; no target labels during training/selection; project-wise target feature normalization is transductive",
+  "source_split": "Exact frozen FLR / ALMITY 20261114 row indices; per-client grouping ~80/20; no cross-client joint grouping",
+  "duplicate_policy": "Preserve raw files. In each fold remove source records with features identical to target within identical schema; preserve conflicting source labels but group identical features for splitting. Save indices.",
+  "model": {
+    "ROUNDS": 50,
+    "LOCAL_EPOCHS": 5,
+    "BATCH_SIZE": 32,
+    "HASH_DIM": 1024,
+    "H1_DIM": 128,
+    "H2_DIM": 64,
+    "LEARNING_RATE": 0.003,
+    "DROPOUT_P": 0.2,
+    "FEDPROX_MU": 0.01,
+    "ALIGN_MEAN_WEIGHT": 0.001,
+    "ALIGN_VAR_WEIGHT": 0.001,
+    "USE_DP": true,
+    "DP_CLIP_NORM": 1.0,
+    "DP_NOISE_MULTIPLIER": 1.0
+  },
+  "paper_verified": [
+    "ROUNDS",
+    "LOCAL_EPOCHS",
+    "BATCH_SIZE",
+    "FEDPROX_MU",
+    "ALIGN_MEAN_WEIGHT",
+    "ALIGN_VAR_WEIGHT"
+  ],
+  "code_default_not_verified_as_paper_final": [
+    "HASH_DIM",
+    "H1_DIM",
+    "H2_DIM",
+    "LEARNING_RATE",
+    "DROPOUT_P",
+    "DP_CLIP_NORM",
+    "DP_NOISE_MULTIPLIER"
+  ],
+  "aggregation": "Unmodified author federated_round: training loss from local_train feeds hybrid aggregate",
+  "thresholds": {
+    "study_primary": "Grid 0.05..0.95 step 0.025; maximize source-project macro MCC, tie higher macro Recall then lower threshold",
+    "paper_supplement": "Same grid; pooled source-validation F1, tie lower threshold"
+  },
+  "effort": "Probability / raw LOC; stable row-ID tie break; budgets 5,10,20,40%; linear interpolation; truncated Popt area. Any invalid target LOC -> all effort metrics N/A for this project.",
+  "ensemble": "None: 10 independent runs per target, project-level mean and std",
+  "deviations_and_limits": [
+    "Author CSV release counts differ from paper table; no claim to exact numerical reproduction",
+    "80/20 validation and fixed split seed are implementation choices not specified in paper",
+    "Source target-duplicate exclusion and group splits are leakage controls added for this run",
+    "Native source loader excludes loc but not every alternative LOC field; preserve author feature selection and extract effort separately",
+    "Author core uses an approximate focal-loss gradient and partial alignment backprop; unchanged and explicitly not a rederivation of paper equations",
+    "Author Python hash used with PYTHONHASHSEED=0; environment frozen; not a portable hash guarantee",
+    "C=1 and sigma=0.1 are upstream defaults; no verified total epsilon/delta; auxiliary statistics are not fully protected",
+    "Original author training losses preserved; prior experiment validation-loss substitution removed",
+    "Unified held-out validation threshold selection instead of upstream training-set ensemble threshold selection",
+    "Cross-client duplicate-feature isolation is not required",
+    "50 rounds/5 epochs/batch32 instead of upstream defaults80/12/128; paper-budget parameter overrides are explicit",
+    "One pinned CSV per project; native feature exclusions retained, feature list may differ from other methods",
+    "Six predeclared conditions; no epsilon conversion; unchanged unprotected auxiliary statistics.",
+    "All 1800 runs are newly executed; no automatic reuse of Windows historical results."
+  ],
+  "environment": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.3.3",
+    "pandas": "2.3.3",
+    "sklearn": "1.7.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "blas_threads_per_worker": 1,
+    "workers": 2
+  },
+  "vendor_sha256": "dc8dba706c475e74f22fd7d68f513e7eae19e9bcf8007db9a0b4f57bed4f3687",
+  "data_protocol": "rq1-project-lopo-local-groups-v3",
+  "preprocessing": "Native z-score plus feature hash, not ALMITY MinMax; source stats fit train only; target self normalization",
+  "execution": {
+    "workers": 2,
+    "blas_threads": 1,
+    "pythonhashseed": "0"
+  },
+  "privacy_condition": "sigma_1p0",
+  "study": "Native perturbation versus utility; no verified end-to-end epsilon/delta",
+  "parent_protocol_sha256": "3539f84fe2b347cd145d9e2afe6809fa3fd1542bd98473ea79e402e3c26890a8"
+}

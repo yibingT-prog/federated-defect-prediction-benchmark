@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "PC4",
+  "family": "NASA",
+  "seed": 7,
+  "rounds": 50,
+  "fingerprint": "b8b759ffc151e6f8d1c0ae7db6c2e343c5f29fade728411fc6d90ab2519fd0ef",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.05,
+    "ROC_AUC": 0.5634829744999237,
+    "MCC": 0.08961115746562388,
+    "Recall": 0.5423728813559322,
+    "G_mean": 0.5639985510194088,
+    "F1": 0.26229508196721313
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.5634829744999237,
+    "MCC": 0.08961115746562388,
+    "Recall": 0.5423728813559322,
+    "G_mean": 0.5639985510194088,
+    "F1": 0.26229508196721313
+  },
+  "validation_f1": {
+    "threshold": 0.05,
+    "ROC_AUC": 0.5634829744999237,
+    "MCC": 0.08961115746562388,
+    "Recall": 0.5423728813559322,
+    "G_mean": 0.5639985510194088,
+    "F1": 0.26229508196721313
+  }
+}

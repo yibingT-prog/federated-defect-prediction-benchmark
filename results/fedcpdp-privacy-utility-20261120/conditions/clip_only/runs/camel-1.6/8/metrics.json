@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "camel-1.6",
+  "family": "PROMISE",
+  "seed": 8,
+  "rounds": 50,
+  "fingerprint": "44f5faa0dd656a21c0f4e97cbee3b4e3444d3261e46a67601fb42924d65b6947",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.675,
+    "ROC_AUC": 0.6098263917412854,
+    "MCC": 0.12332132003370068,
+    "Recall": 0.5053191489361702,
+    "G_mean": 0.571378937574424,
+    "F1": 0.34050179211469533
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.6098263917412854,
+    "MCC": 0.1370355333694499,
+    "Recall": 0.5797872340425532,
+    "G_mean": 0.5858719839212777,
+    "F1": 0.3550488599348534
+  },
+  "validation_f1": {
+    "threshold": 0.85,
+    "ROC_AUC": 0.6098263917412854,
+    "MCC": 0.16328170666949526,
+    "Recall": 0.4574468085106383,
+    "G_mean": 0.5787832108853634,
+    "F1": 0.35684647302904565
+  }
+}

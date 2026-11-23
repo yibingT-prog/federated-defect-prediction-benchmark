@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "xerces-1.3",
+  "family": "PROMISE",
+  "seed": 9,
+  "rounds": 50,
+  "fingerprint": "1b67b08c7e797204420153e8c5831bc0181c445d62e68915692603d3196fb699",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.05,
+    "ROC_AUC": 0.45778608091787437,
+    "MCC": -0.0864249753568043,
+    "Recall": 0.4057971014492754,
+    "G_mean": 0.43855549007439887,
+    "F1": 0.18729096989966554
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.45778608091787437,
+    "MCC": -0.09532553479442135,
+    "Recall": 0.36231884057971014,
+    "G_mean": 0.42783933618186754,
+    "F1": 0.176056338028169
+  },
+  "validation_f1": {
+    "threshold": 0.05,
+    "ROC_AUC": 0.45778608091787437,
+    "MCC": -0.0864249753568043,
+    "Recall": 0.4057971014492754,
+    "G_mean": 0.43855549007439887,
+    "F1": 0.18729096989966554
+  }
+}

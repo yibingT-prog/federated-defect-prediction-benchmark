@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "ant-1.7",
+  "family": "PROMISE",
+  "seed": 1,
+  "rounds": 50,
+  "fingerprint": "13ebcbf25fadc3b2680f584bc676f91960eab856313dd8c926321c31f1de0d04",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.3,
+    "ROC_AUC": 0.6642684728551512,
+    "MCC": 0.2016276405958872,
+    "Recall": 0.6686746987951807,
+    "G_mean": 0.6192089220280752,
+    "F1": 0.42366412213740456
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.6642684728551512,
+    "MCC": 0.2111574480336643,
+    "Recall": 0.6204819277108434,
+    "G_mean": 0.6254199330037161,
+    "F1": 0.42650103519668736
+  },
+  "validation_f1": {
+    "threshold": 0.9,
+    "ROC_AUC": 0.6642684728551512,
+    "MCC": 0.1851484830352882,
+    "Recall": 0.463855421686747,
+    "G_mean": 0.5862470667920691,
+    "F1": 0.39185750636132316
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "PDE",
+  "family": "AEEEM",
+  "seed": 2,
+  "rounds": 50,
+  "fingerprint": "06bc2e41fe8da9b172a35c0b17629f27c39865bbc4a40b86f10d00c8c2897303",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.05,
+    "ROC_AUC": 0.5105203720764362,
+    "MCC": 0.01612746186436217,
+    "Recall": 0.46411483253588515,
+    "G_mean": 0.5093555478134925,
+    "F1": 0.2219679633867277
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.5105203720764362,
+    "MCC": 0.01612746186436217,
+    "Recall": 0.46411483253588515,
+    "G_mean": 0.5093555478134925,
+    "F1": 0.2219679633867277
+  },
+  "validation_f1": {
+    "threshold": 0.05,
+    "ROC_AUC": 0.5105203720764362,
+    "MCC": 0.01612746186436217,
+    "Recall": 0.46411483253588515,
+    "G_mean": 0.5093555478134925,
+    "F1": 0.2219679633867277
+  }
+}

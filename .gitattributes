@@ -7,3 +7,6 @@ experiments/homogeneous/fedcpdp-native-20261114/** -text
 experiments/homogeneous/almity-svm-20261114/** -text
 experiments/homogeneous/ecfml-resource-20261116/** -text
 experiments/homogeneous/feddp-resource-20261116/** -text
+experiments/privacy/fedcpdp-native-20261120/** -text
+scripts/prepare_privacy_data.py -text
+scripts/verify_privacy_publication.py -text

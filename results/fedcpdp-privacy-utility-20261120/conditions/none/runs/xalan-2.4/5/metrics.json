@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "xalan-2.4",
+  "family": "PROMISE",
+  "seed": 5,
+  "rounds": 50,
+  "fingerprint": "b39981178c6c76e98f92b8001198c542a0adb27eddc3e5295ab431a3cc070376",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.95,
+    "ROC_AUC": 0.7120050422660537,
+    "MCC": 0.2103037869626261,
+    "Recall": 0.4636363636363636,
+    "G_mean": 0.6050359621522947,
+    "F1": 0.35172413793103446
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.7120050422660537,
+    "MCC": 0.2310666954416851,
+    "Recall": 0.6545454545454545,
+    "G_mean": 0.6567957757835028,
+    "F1": 0.36828644501278773
+  },
+  "validation_f1": {
+    "threshold": 0.9,
+    "ROC_AUC": 0.7120050422660537,
+    "MCC": 0.2354641166230997,
+    "Recall": 0.5181818181818182,
+    "G_mean": 0.6329946199903085,
+    "F1": 0.37254901960784315
+  }
+}

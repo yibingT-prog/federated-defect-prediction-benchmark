@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "synapse-1.2",
+  "family": "PROMISE",
+  "seed": 3,
+  "rounds": 50,
+  "fingerprint": "c2e19a8a848630dba47b7d9c0322f9132d1401fa8ea34f5556e51ab78cebd1a3",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.42499999999999993,
+    "ROC_AUC": 0.7025991792065663,
+    "MCC": 0.2599919735149783,
+    "Recall": 0.6511627906976745,
+    "G_mean": 0.6371963212753078,
+    "F1": 0.5436893203883495
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.7025991792065663,
+    "MCC": 0.2765695863680757,
+    "Recall": 0.5930232558139535,
+    "G_mean": 0.6415823462165587,
+    "F1": 0.5396825396825397
+  },
+  "validation_f1": {
+    "threshold": 0.42499999999999993,
+    "ROC_AUC": 0.7025991792065663,
+    "MCC": 0.2599919735149783,
+    "Recall": 0.6511627906976745,
+    "G_mean": 0.6371963212753078,
+    "F1": 0.5436893203883495
+  }
+}

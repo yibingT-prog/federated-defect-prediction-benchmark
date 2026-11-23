@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "sha256": "e0db6281c156aa264e5e5c8fa491b0fac7df09d4c3972f6ddaca30201e777141",
+  "total": 1800,
+  "conditions": {
+    "none": 300,
+    "clip_only": 300,
+    "sigma_0p1": 300,
+    "sigma_0p25": 300,
+    "sigma_0p5": 300,
+    "sigma_1p0": 300
+  },
+  "server_models_reloaded": true,
+  "local_archive_hash_verified": true,
+  "local_prediction_structure_verified": true,
+  "completed_unix": 1795416894.814048,
+  "frozen_package_files_verified": 431
+}

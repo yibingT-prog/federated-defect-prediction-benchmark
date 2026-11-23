@@ -1,0 +1,14 @@
+{
+  "experiment_type": "privacy_utility_tradeoff",
+  "experiment_id": "fedcpdp-native-20261120",
+  "not_a_homogeneous_method_comparison": true,
+  "data_scenario": "frozen within-family homogeneous LOPO",
+  "completed_runs": 1800,
+  "executed_package_manifest": "../package_manifest.json",
+  "executed_files": "All non-data entries of package_manifest.json are published byte-identically. Data must be reconstructed before validation/training.",
+  "legacy_names": "Raw metrics method=FedCPDP-author-native-homogeneous and protocol fields are execution evidence; do not rewrite them. Use experiment_type and privacy_condition for classification.",
+  "analysis_scripts": "Portable path adaptation only; report statistics are reproducible from published predictions and logs.",
+  "environment": "Ubuntu 24.04 x86_64, Python 3.12; protocol.environment inherited Windows template metadata; see environment.freeze.txt.",
+  "excluded": "Raw data, 1800 pickle checkpoints, server service/SSH details, runtime locks and temporary files are not published.",
+  "local_archive_sha256": "e0db6281c156aa264e5e5c8fa491b0fac7df09d4c3972f6ddaca30201e777141"
+}

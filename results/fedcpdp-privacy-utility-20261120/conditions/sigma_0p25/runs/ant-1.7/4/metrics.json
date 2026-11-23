@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "ant-1.7",
+  "family": "PROMISE",
+  "seed": 4,
+  "rounds": 50,
+  "fingerprint": "0e7fb6869cd9c619512d57fbbc658248659a7f1c59848de48da48b481a5b3772",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.9249999999999999,
+    "ROC_AUC": 0.38529246519757787,
+    "MCC": -0.10481588315454986,
+    "Recall": 0.3313253012048193,
+    "G_mean": 0.4245641265423438,
+    "F1": 0.2268041237113402
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.38529246519757787,
+    "MCC": -0.10852461421462778,
+    "Recall": 0.35542168674698793,
+    "G_mean": 0.4277015380077169,
+    "F1": 0.233201581027668
+  },
+  "validation_f1": {
+    "threshold": 0.9249999999999999,
+    "ROC_AUC": 0.38529246519757787,
+    "MCC": -0.10481588315454986,
+    "Recall": 0.3313253012048193,
+    "G_mean": 0.4245641265423438,
+    "F1": 0.2268041237113402
+  }
+}

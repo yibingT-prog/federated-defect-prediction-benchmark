@@ -2,7 +2,7 @@
 
 Reproducible experiments comparing complete federated learning methods for software defect prediction. Native classifiers and core method mechanisms are preserved. The repository is intended to cover homogeneous features, heterogeneous features, privacy effects, and sensitivity analysis.
 
-**Current release:** six separately versioned completed experiments:
+**Current release:** seven separately versioned completed experiments:
 
 - [FedCPDP mixed-source LOPO](experiments/completed/fedcpdp-paper-lopo-20261110/): historical 90 seed models and 30 ensembles.
 - [FLR homogeneous](experiments/homogeneous/flr-tff-20261111/): 300 models; [results](results/flr-homogeneous-20261111/README.md).
@@ -10,6 +10,7 @@ Reproducible experiments comparing complete federated learning methods for softw
 - [ALMITY linear SVM reimplementation](experiments/homogeneous/almity-svm-20261114/PUBLICATION.md): 300 models, 100 rounds; [results](results/almity-homogeneous-20261114/README.md).
 - **[ECFML complete-mechanism reimplementation](experiments/homogeneous/ecfml-resource-20261116/PUBLICATION.md):** 300 models across five families, 50 rounds, **labeled target support adaptation**; [results](results/ecfml-homogeneous-20261116/README.md).
 - **[FedDP complete-mechanism reimplementation](experiments/homogeneous/feddp-resource-20261116/PUBLICATION.md):** 230 models across four eligible families, 50 rounds, **independent public distillation data**; [results](results/feddp-homogeneous-20261116/README.md). ReLink cannot retain two private clients after reserving public and target projects and is explicitly not applicable.
+- **[FedCPDP privacy–utility tradeoff](experiments/privacy/fedcpdp-native-20261120/PUBLICATION.md):** 1,800 new runs, six clipping/noise conditions × 30 targets × 10 seeds; [separate results and report](results/fedcpdp-privacy-utility-20261120/README.md). Completed 2026-11-23. This is a privacy–utility study, **not a homogeneous method-comparison experiment**, even though it uses frozen within-family homogeneous data. No verified end-to-end epsilon/delta claim.
 
 ECFML and FedDP completed and passed prediction/model verification on 2026-11-16. These are declared reimplementations, not untouched author programs or exact paper-table replications. Target-label access, public resources, private source lists and test records differ between conditions; their aggregate scores do not form a controlled method ranking. Multi-method rankings and sensitivity studies remain pending.
 
@@ -29,7 +30,7 @@ experiments/
   homogeneous/ecfml-resource-20261116/  # target labeled support + held-out query
   homogeneous/feddp-resource-20261116/  # independent public-project distillation
   heterogeneous/                       # RQ2 scope and admission requirements
-  privacy/                             # RQ3 scope, not yet executed
+  privacy/fedcpdp-native-20261120/       # RQ3 privacy–utility: six native perturbation conditions
   sensitivity/                         # RQ4 scope, not yet executed
 datasets/                              # provenance and local preparation policy
 results/fedcpdp-paper-lopo-20261110/     # verified project-level metrics
@@ -38,6 +39,7 @@ results/fedcpdp-native-homogeneous-20261114/ # 300 native models, metrics and pr
 results/almity-homogeneous-20261114/     # 300 linear SVM models
 results/ecfml-homogeneous-20261116/      # 300 models, separate supervision condition
 results/feddp-homogeneous-20261116/      # 230 models, final-round and last-10 results
+results/fedcpdp-privacy-utility-20261120/ # 1,800 privacy–utility runs, separate from method rankings
 scripts/                               # dataset preparation and integrity checks
 tests/                                 # small metric and split correctness checks
 docs/                                  # experiment design and reproduction notes

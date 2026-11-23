@@ -21,3 +21,4 @@ jobs:
       - run: python scripts/verify_almity_publication.py
       - run: python scripts/verify_resource_publication.py --method ecfml
       - run: python scripts/verify_resource_publication.py --method feddp
+      - run: python scripts/verify_privacy_publication.py

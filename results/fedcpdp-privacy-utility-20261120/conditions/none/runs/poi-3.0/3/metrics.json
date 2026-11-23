@@ -1,0 +1,42 @@
+{
+  "method": "FedCPDP-author-native-homogeneous",
+  "target": "poi-3.0",
+  "family": "PROMISE",
+  "seed": 3,
+  "rounds": 50,
+  "fingerprint": "e5cee80da07c5a0be2bd9f4029c6f3e7e40c9c93443ca4f237fab56a39ef5066",
+  "effort": {
+    "CostEffect@5": null,
+    "CostEffect@10": null,
+    "CostEffect@20": null,
+    "CostEffect@40": null,
+    "Popt@5": null,
+    "Popt@10": null,
+    "Popt@20": null,
+    "Popt@40": null
+  },
+  "study_mcc": {
+    "threshold": 0.5499999999999999,
+    "ROC_AUC": 0.7236466921597666,
+    "MCC": 0.3371407069079952,
+    "Recall": 0.5302491103202847,
+    "G_mean": 0.6568446759113045,
+    "F1": 0.6478260869565218
+  },
+  "fixed_05": {
+    "threshold": 0.5,
+    "ROC_AUC": 0.7236466921597666,
+    "MCC": 0.28778683779744124,
+    "Recall": 0.5907473309608541,
+    "G_mean": 0.6467558590204272,
+    "F1": 0.6720647773279352
+  },
+  "validation_f1": {
+    "threshold": 0.5499999999999999,
+    "ROC_AUC": 0.7236466921597666,
+    "MCC": 0.3371407069079952,
+    "Recall": 0.5302491103202847,
+    "G_mean": 0.6568446759113045,
+    "F1": 0.6478260869565218
+  }
+}
