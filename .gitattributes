@@ -10,3 +10,6 @@ experiments/homogeneous/feddp-resource-20261116/** -text
 experiments/privacy/fedcpdp-native-20261120/** -text
 scripts/prepare_privacy_data.py -text
 scripts/verify_privacy_publication.py -text
+experiments/privacy/flr-gaussian-extension-v1/** -text
+experiments/privacy/almity-gaussian-extension-v1/** -text
+实验报告与交接材料/** -text

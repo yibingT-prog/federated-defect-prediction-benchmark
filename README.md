@@ -90,3 +90,7 @@ Do not compare scores from different target-label access conditions as though th
 Original FedCPDP: Meetesh Nevendra and Rahul Shrivastava, *Federated and Privacy-Preserving Cross-Project Defect Prediction With Heterogeneous Features*, DOI [10.1109/TSE.2026.3692541](https://doi.org/10.1109/TSE.2026.3692541). Upstream [MeeteshNevendra/FedCPDP](https://github.com/MeeteshNevendra/FedCPDP), pinned commit `ab5af637a60aed4c34a5338709b3ac65b344ec37`.
 
 Repository-authored code is MIT licensed. Vendored FedCPDP retains its original MIT license and copyright. Third-party datasets and papers are not covered by this repository's license. See [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## FLR / ALMITY 隐私扩展交付（2026-11-24）
+
+本分支新增两方法的扩展源码、整理后的正式结果与中文实验报告/交接。请从 [交付入口](FLR_ALMITY_PRIVACY_DELIVERY.md) 阅读；每方法 1800 个正式模型。原基线和既有结果保持原样，缺失验收证据及独立模型/数据归档在交接中说明。

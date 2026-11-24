@@ -1,0 +1,18 @@
+{
+  "experiment_type": "privacy_utility_tradeoff_extension",
+  "experiment_id": "almity-gaussian-extension-v1",
+  "method": "ALMITY",
+  "base_repository_commit": "7aa2df37f6cf3830a0f001e6e1a93d88d22297d9",
+  "base_dir": "experiments/homogeneous/almity-svm-20261114",
+  "conditions": {
+    "none": {"clip": false, "clip_norm": 1.0, "sigma": 0.0},
+    "clip_only": {"clip": true, "clip_norm": 1.0, "sigma": 0.0},
+    "sigma_0p1": {"clip": true, "clip_norm": 1.0, "sigma": 0.1},
+    "sigma_0p25": {"clip": true, "clip_norm": 1.0, "sigma": 0.25},
+    "sigma_0p5": {"clip": true, "clip_norm": 1.0, "sigma": 0.5},
+    "sigma_1p0": {"clip": true, "clip_norm": 1.0, "sigma": 1.0}
+  },
+  "auxiliary_statistics_protected": false,
+  "formal_epsilon_delta_verified": false,
+  "training": {"rounds": 100, "local_epochs": 5, "batch_size": 32, "lr": 0.01, "l2": 0.0001}
+}

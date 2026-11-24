@@ -1,0 +1,267 @@
+{
+  "publication_date": "2026-11-24",
+  "branch": "privacy-ext/flr-almity-20261124",
+  "base_repository_commit": "7aa2df37f6cf3830a0f001e6e1a93d88d22297d9",
+  "runtime_git_initial_commit": "126ea193c9102a867aa9ec9dbaa60015be67373d",
+  "publication_is_post_execution_snapshot": true,
+  "runtime_code_commit_fields_preserved": true,
+  "full_model_reverification_during_publication": false,
+  "raw_data_models_environments_in_git": false,
+  "baseline_checks": {
+    "experiments/homogeneous/flr-tff-20261111/train_tff.py": {
+      "runtime_sha256": "614b0fc7127b29ce7af5a603071a982cc30dbc5525dffc3249d96de0818bd9e8",
+      "upstream_sha256": "614b0fc7127b29ce7af5a603071a982cc30dbc5525dffc3249d96de0818bd9e8",
+      "byte_identical": true,
+      "json_semantically_identical": null
+    },
+    "experiments/homogeneous/flr-tff-20261111/protocol.json": {
+      "runtime_sha256": "922b1db00ef93f33bc084e445fffbe89e62994b747b805bdae78502d0ef815a0",
+      "upstream_sha256": "922b1db00ef93f33bc084e445fffbe89e62994b747b805bdae78502d0ef815a0",
+      "byte_identical": true,
+      "json_semantically_identical": true
+    },
+    "experiments/homogeneous/flr-tff-20261111/tasks.json": {
+      "runtime_sha256": "8528129afad6132f900784e544b9c2dd4233c65375f9bffb2f242b13963b6efe",
+      "upstream_sha256": "8528129afad6132f900784e544b9c2dd4233c65375f9bffb2f242b13963b6efe",
+      "byte_identical": true,
+      "json_semantically_identical": true
+    },
+    "experiments/homogeneous/almity-svm-20261114/train.py": {
+      "runtime_sha256": "c2e3d871adf588afed4c9b277b54fdd8d10c9f579697526f9d979885062167b5",
+      "upstream_sha256": "c2e3d871adf588afed4c9b277b54fdd8d10c9f579697526f9d979885062167b5",
+      "byte_identical": true,
+      "json_semantically_identical": null
+    },
+    "experiments/homogeneous/almity-svm-20261114/metrics.py": {
+      "runtime_sha256": "41ea1f9ab84eaee035787df0c1eee14f1dfd9b74d85a4af43eedbee8ad62f50c",
+      "upstream_sha256": "41ea1f9ab84eaee035787df0c1eee14f1dfd9b74d85a4af43eedbee8ad62f50c",
+      "byte_identical": true,
+      "json_semantically_identical": null
+    },
+    "experiments/homogeneous/almity-svm-20261114/protocol.json": {
+      "runtime_sha256": "a347e984215634de758184fbe9f1503f11f8bfa6d189922560ded88e1789a2e2",
+      "upstream_sha256": "a347e984215634de758184fbe9f1503f11f8bfa6d189922560ded88e1789a2e2",
+      "byte_identical": true,
+      "json_semantically_identical": true
+    },
+    "experiments/homogeneous/almity-svm-20261114/tasks.json": {
+      "runtime_sha256": "37e5037ce3746b66f284d0c00a5dbf68c6fd78b2a99b8fd06a01d5f7084db83e",
+      "upstream_sha256": "9c4370ee85c1c75983446673997af393851fe022b266416dc6d88434029b39ae",
+      "byte_identical": false,
+      "json_semantically_identical": true
+    }
+  },
+  "result_mapping": {
+    "experiments/privacy/flr-gaussian-extension-v1/runs/formal/": "results/flr-privacy-utility-extension-v1/",
+    "experiments/privacy/almity-gaussian-extension-v1/runs/formal/": "results/almity-privacy-utility-extension-v1/",
+    "experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/formal/progress.json": "results/flr-privacy-utility-extension-v1/scheduler_progress.json"
+  },
+  "known_publication_differences": [
+    "Extension README status and navigation",
+    "GitHub report/handoff links and publication notice",
+    "Local ALMITY verify.py NumPy<2 trapezoid compatibility patch disclosed in report",
+    "ALMITY baseline tasks.json JSON values equal; upstream formatting retained"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 699,
+      "sha256": "52731b6ccbae9401822eea9cf4c614a4cff3b5b6572a2e22a1b952eeb71386c7"
+    },
+    {
+      "path": "EXTERNAL_ARTIFACTS.md",
+      "bytes": 1997,
+      "sha256": "a8c9cc7f9c67b6fb60f8d0a45d3e27fa4ea5b374d768a8f67dc38444e7d9961f"
+    },
+    {
+      "path": "FLR_ALMITY_PRIVACY_DELIVERY.md",
+      "bytes": 1781,
+      "sha256": "27a30a8c703fe03435d129b0dc9e4a78ef00fd89d39265374fea41575762807f"
+    },
+    {
+      "path": "FLR与ALMITY隐私实验_实验报告.md",
+      "bytes": 23586,
+      "sha256": "4807ae022a4cf52a137ca3c95fba773bee15db71c54d73fd2b71858bf1f33149"
+    },
+    {
+      "path": "FLR与ALMITY隐私实验_开发运行与迁移交接.md",
+      "bytes": 32804,
+      "sha256": "1662af042e9bbb3607a1eafb626478ddef4bd1faa92439797e958a73f23dd3cc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9642,
+      "sha256": "5f8eabe25aa6c6d08ef839f5d66dceef4e1e1789d0d1dff6b895bcbe840a8f11"
+    },
+    {
+      "path": "audit_report_evidence.py",
+      "bytes": 9409,
+      "sha256": "cd258a5c31f9460ac592efa36659e6c5d6ad1eaa6ef6078e9999924b4761089d"
+    },
+    {
+      "path": "build_experiment_documents.py",
+      "bytes": 55631,
+      "sha256": "07bec5960669d46dbe6e2f5e4d710509260549a5630554b007b5d1eeb18613c5"
+    },
+    {
+      "path": "experiments/privacy/almity-gaussian-extension-v1/README.md",
+      "bytes": 2198,
+      "sha256": "0560739ea9f0260e68780b2ef8345fb3214808808d702d1fdf69373def4f2fef"
+    },
+    {
+      "path": "experiments/privacy/almity-gaussian-extension-v1/privacy.py",
+      "bytes": 2035,
+      "sha256": "5bd5d643ee07372742eb1d3db58d7ef117ea15e712c867f6eddbff0d592895ee"
+    },
+    {
+      "path": "experiments/privacy/almity-gaussian-extension-v1/protocol.json",
+      "bytes": 857,
+      "sha256": "076889e0d2c202a9ef86e1ee455b420378af7de41f46665c06c26d1ff965e819"
+    },
+    {
+      "path": "experiments/privacy/almity-gaussian-extension-v1/run_study.py",
+      "bytes": 3306,
+      "sha256": "2df6c7a4cd9b7d2b6db3e75c4bbdadca068d2f608040b12a32d8c2dd06657da9"
+    },
+    {
+      "path": "experiments/privacy/almity-gaussian-extension-v1/test_privacy.py",
+      "bytes": 810,
+      "sha256": "682cf70381aa00784dbb92faa947f4cd8fde6c80c437d52a81cf4497fd1d3be7"
+    },
+    {
+      "path": "experiments/privacy/almity-gaussian-extension-v1/train.py",
+      "bytes": 8051,
+      "sha256": "1ce66577af9f002464f584a2693b18e072f705ca24021b26bc5c2de7f71e962a"
+    },
+    {
+      "path": "experiments/privacy/almity-gaussian-extension-v1/verify.py",
+      "bytes": 12984,
+      "sha256": "f84cd985163788d00e8c2c06ca3571a49bb3ec998d09b731092f5415586fc092"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/README.md",
+      "bytes": 1836,
+      "sha256": "68d5812b179ca2b66bbfb7d50c3f27f83d20cdf8ba7cca34c668c6919d22a79c"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/launch_formal_after_pilot.sh",
+      "bytes": 1031,
+      "sha256": "39bbda9496a7146a538409bcf611b8252e985f02a96e49780ca2c15809ca6c19"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/privacy.py",
+      "bytes": 6004,
+      "sha256": "87ccdf32ca9631df650b1d6d40e96400a70b97211924282e89c5a26c30cbf629"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/protocol.json",
+      "bytes": 921,
+      "sha256": "d656acf514738f110ebbe95fa79c2ef318146954db9dd9fb8e40602f2e974974"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/run_study.py",
+      "bytes": 5082,
+      "sha256": "780f1d3c376f3d6d6a195d32ee35387b5b940b66f6288822a70fb25f93540fe7"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/test_privacy.py",
+      "bytes": 597,
+      "sha256": "23242b1b5f283529af3ea0444c2b4d09b67b96e4cfcdfb7ceb384a7c0fd1f701"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/train.py",
+      "bytes": 7250,
+      "sha256": "d308261a653fdd2354c43d97dd6297e10d377cd97f0b8ab0092277bc189447b0"
+    },
+    {
+      "path": "experiments/privacy/flr-gaussian-extension-v1/verify.py",
+      "bytes": 12228,
+      "sha256": "b59082f1987d5db945b4c0d2f85b9535b0713f228db87365f9e2220a1db9c5f0"
+    },
+    {
+      "path": "results/almity-privacy-utility-extension-v1/README.md",
+      "bytes": 1335,
+      "sha256": "730d1f0070ba43bf29ef5a0cd0f3f8dd8cf30dd9534a02deb5d159221ed3a6b3"
+    },
+    {
+      "path": "results/almity-privacy-utility-extension-v1/method_summary.csv",
+      "bytes": 3936,
+      "sha256": "51b7cb2f72e8e2e7f37679f26ba2789a4739669177d565d25f9c667b12dd66e8"
+    },
+    {
+      "path": "results/almity-privacy-utility-extension-v1/perturbation_diagnostics_summary.csv",
+      "bytes": 182476,
+      "sha256": "9883b9043437a799ae69ef90d6432aac3d25f945745ebd5e594c6c7a9d53bf00"
+    },
+    {
+      "path": "results/almity-privacy-utility-extension-v1/run_metrics.csv",
+      "bytes": 1798950,
+      "sha256": "609c0f24f380ba4ddbb11a7c90f8b6e2781e163d157d38f324e71efee5fccf14"
+    },
+    {
+      "path": "results/almity-privacy-utility-extension-v1/study_progress.json",
+      "bytes": 254,
+      "sha256": "1567743063627817e729641d550b0f80c33ee20727c68aa7e7d263aeeef69317"
+    },
+    {
+      "path": "results/almity-privacy-utility-extension-v1/target_seed_summary.csv",
+      "bytes": 43859,
+      "sha256": "b586257977d6cf066e2b4368aa2dadd8276c70ce66ee84e948f239caa6c50822"
+    },
+    {
+      "path": "results/almity-privacy-utility-extension-v1/verification.json",
+      "bytes": 302,
+      "sha256": "0a42c587c5b777bae0f6ab5eb5c08b1869e6e2b8a8690e7681f199e532a1dff0"
+    },
+    {
+      "path": "results/flr-privacy-utility-extension-v1/README.md",
+      "bytes": 1326,
+      "sha256": "7d712e6f807b572fa469d6df0c2fbbcf4952081437f9854e43053824513b44d0"
+    },
+    {
+      "path": "results/flr-privacy-utility-extension-v1/family_summary.csv",
+      "bytes": 9231,
+      "sha256": "ba061d9fbda0aa8e6b5b46aec853bb2c65da3260e2b214b5ac1e984747de1c23"
+    },
+    {
+      "path": "results/flr-privacy-utility-extension-v1/method_summary.csv",
+      "bytes": 4059,
+      "sha256": "8de75f553df142dbfb82f81af8113631b9f8904ec85b4cb2347a3f25749cee3a"
+    },
+    {
+      "path": "results/flr-privacy-utility-extension-v1/run_metrics.csv",
+      "bytes": 1185295,
+      "sha256": "31bed574ecb5085f6312c68b2bab37c672298da3167fb5e3b846e9a4c09e3d95"
+    },
+    {
+      "path": "results/flr-privacy-utility-extension-v1/scheduler_progress.json",
+      "bytes": 826945,
+      "sha256": "835c0e622d68985c31463a0da9882868f3a34d74d84e3c614b242e96a78b9718"
+    },
+    {
+      "path": "results/flr-privacy-utility-extension-v1/target_seed_summary.csv",
+      "bytes": 44834,
+      "sha256": "aec7b59bf3cd9422498a0f3bbe66083755bd62ad87ba9cb6e44c6b80f3d8f38a"
+    },
+    {
+      "path": "results/flr-privacy-utility-extension-v1/verification.json",
+      "bytes": 299,
+      "sha256": "c87e3bc3028897228ead1dfe680636fbb0abf4747b33564d28bef2281be89faf"
+    },
+    {
+      "path": "实验报告与交接材料/文档依据核对.json",
+      "bytes": 27008,
+      "sha256": "7fe812428549977dc95c5c0da17a8ef9758a4f00b387c5f41aa6061cfc6e4aa1"
+    },
+    {
+      "path": "实验报告与交接材料/服务器迁移说明_历史记录.md",
+      "bytes": 1586,
+      "sha256": "c4c730130571550a0bbc0da1630280819a084bbd5cd40fed903db7089a943878"
+    },
+    {
+      "path": "隐私-效用权衡扩展实验_开发与运行交接.md",
+      "bytes": 37040,
+      "sha256": "b242053f0d8563940bd3bd524aa27becf2acd29e712ad1ee3dafa2847d532545"
+    }
+  ]
+}

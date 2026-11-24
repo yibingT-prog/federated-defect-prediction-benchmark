@@ -1,0 +1,468 @@
+{
+  "scope": "document evidence audit; does not replace model verification",
+  "methods": {
+    "FLR": {
+      "rows": 3600,
+      "study_rows": 1800,
+      "unique_models": 1800,
+      "missing": [],
+      "extra": [],
+      "duplicate_study_rows": 0,
+      "invalid_progress": [],
+      "prepared_content_hash_passed": 30,
+      "prepared_dtypes": [
+        "float32"
+      ],
+      "cross_method_frozen_split_matches": 30,
+      "summary_recalculation_errors": [],
+      "threshold_modes": [
+        "native",
+        "study"
+      ],
+      "families": {
+        "PROMISE": [
+          "ant-1.7",
+          "camel-1.6",
+          "ivy-2.0",
+          "jedit-4.0",
+          "log4j-1.0",
+          "lucene-2.4",
+          "poi-3.0",
+          "synapse-1.2",
+          "tomcat",
+          "velocity-1.6",
+          "xalan-2.4",
+          "xerces-1.3"
+        ],
+        "Relink": [
+          "Apache",
+          "Safe",
+          "Zxing"
+        ],
+        "SOFTLAB": [
+          "ar1",
+          "ar3",
+          "ar4",
+          "ar5",
+          "ar6"
+        ],
+        "NASA": [
+          "CM1",
+          "MW1",
+          "PC1",
+          "PC3",
+          "PC4"
+        ],
+        "AEEEM": [
+          "EQ",
+          "JDT",
+          "LC",
+          "ML",
+          "PDE"
+        ]
+      },
+      "valid_effort_targets": [
+        "Apache",
+        "CM1",
+        "MW1",
+        "Safe",
+        "Zxing",
+        "ar1",
+        "ar3",
+        "ar4",
+        "ar5",
+        "ar6",
+        "ivy-2.0",
+        "jedit-4.0",
+        "lucene-2.4"
+      ],
+      "na_effort_targets": [
+        "EQ",
+        "JDT",
+        "LC",
+        "ML",
+        "PC1",
+        "PC3",
+        "PC4",
+        "PDE",
+        "ant-1.7",
+        "camel-1.6",
+        "log4j-1.0",
+        "poi-3.0",
+        "synapse-1.2",
+        "tomcat",
+        "velocity-1.6",
+        "xalan-2.4",
+        "xerces-1.3"
+      ],
+      "verification": {
+        "status": "passed",
+        "expected_tasks": 1800,
+        "verified_tasks": 1800,
+        "verified_rows": 3600,
+        "error_count": 0,
+        "errors": [],
+        "error_list_truncated": false,
+        "saturated_probability_tasks": 184,
+        "max_saturated_probability_fraction": 0.06611570247933884,
+        "threshold_edge_count": 78
+      },
+      "diagnostics": [
+        {
+          "condition": "none",
+          "tasks": 300,
+          "saturated_tasks": 20,
+          "max_saturation_fraction": 0.0030864197530864196,
+          "threshold_edges": 22
+        },
+        {
+          "condition": "clip_only",
+          "tasks": 300,
+          "saturated_tasks": 20,
+          "max_saturation_fraction": 0.0030864197530864196,
+          "threshold_edges": 10
+        },
+        {
+          "condition": "sigma_0p1",
+          "tasks": 300,
+          "saturated_tasks": 22,
+          "max_saturation_fraction": 0.0030864197530864196,
+          "threshold_edges": 6
+        },
+        {
+          "condition": "sigma_0p25",
+          "tasks": 300,
+          "saturated_tasks": 20,
+          "max_saturation_fraction": 0.0030864197530864196,
+          "threshold_edges": 5
+        },
+        {
+          "condition": "sigma_0p5",
+          "tasks": 300,
+          "saturated_tasks": 26,
+          "max_saturation_fraction": 0.020050125313283207,
+          "threshold_edges": 7
+        },
+        {
+          "condition": "sigma_1p0",
+          "tasks": 300,
+          "saturated_tasks": 76,
+          "max_saturation_fraction": 0.06611570247933884,
+          "threshold_edges": 28
+        }
+      ],
+      "source_sha256": {
+        "experiments/privacy/flr-gaussian-extension-v1/launch_formal_after_pilot.sh": "39bbda9496a7146a538409bcf611b8252e985f02a96e49780ca2c15809ca6c19",
+        "experiments/privacy/flr-gaussian-extension-v1/privacy.py": "87ccdf32ca9631df650b1d6d40e96400a70b97211924282e89c5a26c30cbf629",
+        "experiments/privacy/flr-gaussian-extension-v1/protocol.json": "d656acf514738f110ebbe95fa79c2ef318146954db9dd9fb8e40602f2e974974",
+        "experiments/privacy/flr-gaussian-extension-v1/README.md": "801712aa86c13f5c6b9171ee612f7bf8307468a224d00abf6f68d828d99138ad",
+        "experiments/privacy/flr-gaussian-extension-v1/run_study.py": "780f1d3c376f3d6d6a195d32ee35387b5b940b66f6288822a70fb25f93540fe7",
+        "experiments/privacy/flr-gaussian-extension-v1/test_privacy.py": "23242b1b5f283529af3ea0444c2b4d09b67b96e4cfcdfb7ceb384a7c0fd1f701",
+        "experiments/privacy/flr-gaussian-extension-v1/train.py": "d308261a653fdd2354c43d97dd6297e10d377cd97f0b8ab0092277bc189447b0",
+        "experiments/privacy/flr-gaussian-extension-v1/verify.py": "b59082f1987d5db945b4c0d2f85b9535b0713f228db87365f9e2220a1db9c5f0"
+      },
+      "calibration": {}
+    },
+    "ALMITY": {
+      "rows": 5400,
+      "study_rows": 1800,
+      "unique_models": 1800,
+      "missing": [],
+      "extra": [],
+      "duplicate_study_rows": 0,
+      "invalid_progress": [],
+      "prepared_content_hash_passed": 30,
+      "prepared_dtypes": [
+        "float64"
+      ],
+      "cross_method_frozen_split_matches": 30,
+      "summary_recalculation_errors": [],
+      "threshold_modes": [
+        "fixed_probability",
+        "native_margin",
+        "study"
+      ],
+      "families": {
+        "Relink": [
+          "Apache",
+          "Safe",
+          "Zxing"
+        ],
+        "NASA": [
+          "CM1",
+          "MW1",
+          "PC1",
+          "PC3",
+          "PC4"
+        ],
+        "AEEEM": [
+          "EQ",
+          "JDT",
+          "LC",
+          "ML",
+          "PDE"
+        ],
+        "PROMISE": [
+          "ant-1.7",
+          "camel-1.6",
+          "ivy-2.0",
+          "jedit-4.0",
+          "log4j-1.0",
+          "lucene-2.4",
+          "poi-3.0",
+          "synapse-1.2",
+          "tomcat",
+          "velocity-1.6",
+          "xalan-2.4",
+          "xerces-1.3"
+        ],
+        "SOFTLAB": [
+          "ar1",
+          "ar3",
+          "ar4",
+          "ar5",
+          "ar6"
+        ]
+      },
+      "valid_effort_targets": [
+        "Apache",
+        "CM1",
+        "MW1",
+        "Safe",
+        "Zxing",
+        "ar1",
+        "ar3",
+        "ar4",
+        "ar5",
+        "ar6",
+        "ivy-2.0",
+        "jedit-4.0",
+        "lucene-2.4"
+      ],
+      "na_effort_targets": [
+        "EQ",
+        "JDT",
+        "LC",
+        "ML",
+        "PC1",
+        "PC3",
+        "PC4",
+        "PDE",
+        "ant-1.7",
+        "camel-1.6",
+        "log4j-1.0",
+        "poi-3.0",
+        "synapse-1.2",
+        "tomcat",
+        "velocity-1.6",
+        "xalan-2.4",
+        "xerces-1.3"
+      ],
+      "verification": {
+        "status": "passed",
+        "expected_tasks": 5400,
+        "verified_tasks": 5400,
+        "error_count": 0,
+        "errors": [],
+        "error_list_truncated": false,
+        "saturated_probability_tasks": 0,
+        "max_saturated_probability_fraction": 0.0,
+        "threshold_edge_count": 64,
+        "completed_marker": "completed"
+      },
+      "diagnostics": [
+        {
+          "condition": "none",
+          "tasks": 300,
+          "saturated_tasks": 0,
+          "max_saturation_fraction": 0.0,
+          "threshold_edges": 20
+        },
+        {
+          "condition": "clip_only",
+          "tasks": 300,
+          "saturated_tasks": 0,
+          "max_saturation_fraction": 0.0,
+          "threshold_edges": 20
+        },
+        {
+          "condition": "sigma_0p1",
+          "tasks": 300,
+          "saturated_tasks": 0,
+          "max_saturation_fraction": 0.0,
+          "threshold_edges": 3
+        },
+        {
+          "condition": "sigma_0p25",
+          "tasks": 300,
+          "saturated_tasks": 0,
+          "max_saturation_fraction": 0.0,
+          "threshold_edges": 3
+        },
+        {
+          "condition": "sigma_0p5",
+          "tasks": 300,
+          "saturated_tasks": 0,
+          "max_saturation_fraction": 0.0,
+          "threshold_edges": 7
+        },
+        {
+          "condition": "sigma_1p0",
+          "tasks": 300,
+          "saturated_tasks": 0,
+          "max_saturation_fraction": 0.0,
+          "threshold_edges": 11
+        }
+      ],
+      "source_sha256": {
+        "experiments/privacy/almity-gaussian-extension-v1/privacy.py": "5bd5d643ee07372742eb1d3db58d7ef117ea15e712c867f6eddbff0d592895ee",
+        "experiments/privacy/almity-gaussian-extension-v1/protocol.json": "076889e0d2c202a9ef86e1ee455b420378af7de41f46665c06c26d1ff965e819",
+        "experiments/privacy/almity-gaussian-extension-v1/README.md": "33c365de9ebf548d77bf1abb219895d5de629bbaaf334cee32e6419643fb1fbc",
+        "experiments/privacy/almity-gaussian-extension-v1/run_study.py": "2df6c7a4cd9b7d2b6db3e75c4bbdadca068d2f608040b12a32d8c2dd06657da9",
+        "experiments/privacy/almity-gaussian-extension-v1/test_privacy.py": "682cf70381aa00784dbb92faa947f4cd8fde6c80c437d52a81cf4497fd1d3be7",
+        "experiments/privacy/almity-gaussian-extension-v1/train.py": "1ce66577af9f002464f584a2693b18e072f705ca24021b26bc5c2de7f71e962a",
+        "experiments/privacy/almity-gaussian-extension-v1/verify.py": "f84cd985163788d00e8c2c06ca3571a49bb3ec998d09b731092f5415586fc092"
+      },
+      "calibration": {
+        "clip_only": {
+          "negative_slope_tasks": 20,
+          "min_slope": -0.19633560302813585,
+          "max_slope": 5.568138122189368
+        },
+        "none": {
+          "negative_slope_tasks": 20,
+          "min_slope": -0.19633560302813657,
+          "max_slope": 5.5681381221893655
+        },
+        "sigma_0p1": {
+          "negative_slope_tasks": 15,
+          "min_slope": -0.9222883076189186,
+          "max_slope": 3.9535370640522514
+        },
+        "sigma_0p25": {
+          "negative_slope_tasks": 26,
+          "min_slope": -0.58122557178634,
+          "max_slope": 1.684875226793589
+        },
+        "sigma_0p5": {
+          "negative_slope_tasks": 49,
+          "min_slope": -0.5388171782019355,
+          "max_slope": 0.905868795690882
+        },
+        "sigma_1p0": {
+          "negative_slope_tasks": 92,
+          "min_slope": -0.22394266330812335,
+          "max_slope": 0.4225399365874893
+        }
+      }
+    }
+  },
+  "archive_counts": {
+    "experiments/privacy/almity-gaussian-extension-v1/checkpoint.npz": 1812,
+    "experiments/privacy/almity-gaussian-extension-v1/perturbation_diagnostics.json": 1812,
+    "experiments/privacy/almity-gaussian-extension-v1/metrics.json": 1812,
+    "experiments/privacy/flr-gaussian-extension-v1/pilot_progress": 13,
+    "experiments/privacy/flr-gaussian-extension-v1/latest_weights.npz": 1800,
+    "experiments/privacy/flr-gaussian-extension-v1/metrics.json": 1800
+  },
+  "archive_source_matches": {
+    "experiments/privacy/almity-gaussian-extension-v1/privacy.py": {
+      "archive_sha256": "5bd5d643ee07372742eb1d3db58d7ef117ea15e712c867f6eddbff0d592895ee",
+      "local_equal": true
+    },
+    "experiments/privacy/almity-gaussian-extension-v1/protocol.json": {
+      "archive_sha256": "076889e0d2c202a9ef86e1ee455b420378af7de41f46665c06c26d1ff965e819",
+      "local_equal": true
+    },
+    "experiments/privacy/almity-gaussian-extension-v1/README.md": {
+      "archive_sha256": "33c365de9ebf548d77bf1abb219895d5de629bbaaf334cee32e6419643fb1fbc",
+      "local_equal": true
+    },
+    "experiments/privacy/almity-gaussian-extension-v1/test_privacy.py": {
+      "archive_sha256": "682cf70381aa00784dbb92faa947f4cd8fde6c80c437d52a81cf4497fd1d3be7",
+      "local_equal": true
+    },
+    "experiments/privacy/almity-gaussian-extension-v1/train.py": {
+      "archive_sha256": "1ce66577af9f002464f584a2693b18e072f705ca24021b26bc5c2de7f71e962a",
+      "local_equal": true
+    },
+    "experiments/privacy/almity-gaussian-extension-v1/run_study.py": {
+      "archive_sha256": "2df6c7a4cd9b7d2b6db3e75c4bbdadca068d2f608040b12a32d8c2dd06657da9",
+      "local_equal": true
+    },
+    "experiments/privacy/almity-gaussian-extension-v1/verify.py": {
+      "archive_sha256": "9fc77dc366da8a477d4956bfa816bd64b54d83bdc1c184fdcd1071e2b1fe1a47",
+      "local_equal": false
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/privacy.py": {
+      "archive_sha256": "87ccdf32ca9631df650b1d6d40e96400a70b97211924282e89c5a26c30cbf629",
+      "local_equal": true
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/train.py": {
+      "archive_sha256": "d308261a653fdd2354c43d97dd6297e10d377cd97f0b8ab0092277bc189447b0",
+      "local_equal": true
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/test_privacy.py": {
+      "archive_sha256": "23242b1b5f283529af3ea0444c2b4d09b67b96e4cfcdfb7ceb384a7c0fd1f701",
+      "local_equal": true
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/protocol.json": {
+      "archive_sha256": "d656acf514738f110ebbe95fa79c2ef318146954db9dd9fb8e40602f2e974974",
+      "local_equal": true
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/README.md": {
+      "archive_sha256": "801712aa86c13f5c6b9171ee612f7bf8307468a224d00abf6f68d828d99138ad",
+      "local_equal": true
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/run_study.py": {
+      "archive_sha256": "780f1d3c376f3d6d6a195d32ee35387b5b940b66f6288822a70fb25f93540fe7",
+      "local_equal": true
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/launch_formal_after_pilot.sh": {
+      "archive_sha256": "39bbda9496a7146a538409bcf611b8252e985f02a96e49780ca2c15809ca6c19",
+      "local_equal": true
+    },
+    "experiments/privacy/flr-gaussian-extension-v1/verify.py": {
+      "archive_sha256": "b59082f1987d5db945b4c0d2f85b9535b0713f228db87365f9e2220a1db9c5f0",
+      "local_equal": true
+    }
+  },
+  "archive_selected_records": {
+    ".git/HEAD": "ref: refs/heads/master\n",
+    ".git/logs/HEAD": "0000000000000000000000000000000000000000 126ea193c9102a867aa9ec9dbaa60015be67373d exp <exp@local> 1795447176 +0800\tcommit (initial): base\n",
+    ".git/packed-refs": "# pack-refs with: peeled fully-peeled sorted \n126ea193c9102a867aa9ec9dbaa60015be67373d refs/heads/master\n",
+    "experiments/privacy/almity-gaussian-extension-v1/protocol.json": "{\n  \"experiment_type\": \"privacy_utility_tradeoff_extension\",\n  \"experiment_id\": \"almity-gaussian-extension-v1\",\n  \"method\": \"ALMITY\",\n  \"base_repository_commit\": \"7aa2df37f6cf3830a0f001e6e1a93d88d22297d9\",\n  \"base_dir\": \"experiments/homogeneous/almity-svm-20261114\",\n  \"conditions\": {\n    \"none\": {\"clip\": false, \"clip_norm\": 1.0, \"sigma\": 0.0},\n    \"clip_only\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.0},\n    \"sigma_0p1\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.1},\n    \"sigma_0p25\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.25},\n    \"sigma_0p5\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.5},\n    \"sigma_1p0\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 1.0}\n  },\n  \"auxiliary_statistics_protected\": false,\n  \"formal_epsilon_delta_verified\": false,\n  \"training\": {\"rounds\": 100, \"local_epochs\": 5, \"batch_size\": 32, \"lr\": 0.01, \"l2\": 0.0001}\n}\n",
+    "experiments/privacy/almity-gaussian-extension-v1/runs/formal/verification.json": "{\n  \"status\": \"passed\",\n  \"expected_tasks\": 5400,\n  \"verified_tasks\": 5400,\n  \"error_count\": 0,\n  \"errors\": [],\n  \"error_list_truncated\": false,\n  \"saturated_probability_tasks\": 0,\n  \"max_saturated_probability_fraction\": 0.0,\n  \"threshold_edge_count\": 64,\n  \"completed_marker\": \"completed\"\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/protocol.json": "{\n  \"experiment_type\": \"privacy_utility_tradeoff_extension\",\n  \"experiment_id\": \"flr-gaussian-extension-v1\",\n  \"method\": \"FLR\",\n  \"base_repository_commit\": \"7aa2df37f6cf3830a0f001e6e1a93d88d22297d9\",\n  \"base_dir\": \"experiments/homogeneous/flr-tff-20261111\",\n  \"conditions\": {\n    \"none\": {\"clip\": false, \"clip_norm\": 1.0, \"sigma\": 0.0},\n    \"clip_only\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.0},\n    \"sigma_0p1\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.1},\n    \"sigma_0p25\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.25},\n    \"sigma_0p5\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 0.5},\n    \"sigma_1p0\": {\"clip\": true, \"clip_norm\": 1.0, \"sigma\": 1.0}\n  },\n  \"auxiliary_statistics_protected\": false,\n  \"formal_epsilon_delta_verified\": false,\n  \"training\": {\n    \"rounds\": 100, \"local_epochs\": 100, \"batch_size\": 20,\n    \"shuffle_buffer\": 500, \"client_lr\": 0.1, \"server_lr\": 1.0,\n    \"participation\": 1.0\n  }\n}\n",
+    "experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot_verified.log": "completed none ar5 0 79.2\ncompleted clip_only ar5 0 89.09\ncompleted none CM1 0 262.79\ncompleted sigma_0p1 ar5 0 89.29\ncompleted clip_only CM1 0 267.69\ncompleted sigma_0p25 ar5 0 90.54\ncompleted sigma_0p1 CM1 0 258.2\ncompleted sigma_0p5 ar5 0 89.82\ncompleted sigma_0p25 CM1 0 261.52\ncompleted sigma_1p0 ar5 0 89.38\ncompleted sigma_0p5 CM1 0 265.11\ncompleted sigma_1p0 CM1 0 273.89\n{\n  \"stage\": \"pilot\",\n  \"total\": 12,\n  \"failed\": 0\n}\n",
+    "experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/progress.json": "{\n  \"stage\": \"pilot\",\n  \"total\": 12,\n  \"completed\": 12,\n  \"failed\": 0,\n  \"records\": [\n    {\n      \"condition\": \"none\",\n      \"target\": \"ar5\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 79.2,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/none/ar5/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/none/ar5/0/progress.json\"\n    },\n    {\n      \"condition\": \"clip_only\",\n      \"target\": \"ar5\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 89.09,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/clip_only/ar5/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/clip_only/ar5/0/progress.json\"\n    },\n    {\n      \"condition\": \"none\",\n      \"target\": \"CM1\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 262.79,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/none/CM1/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/none/CM1/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_0p1\",\n      \"target\": \"ar5\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 89.29,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_0p1/ar5/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p1/ar5/0/progress.json\"\n    },\n    {\n      \"condition\": \"clip_only\",\n      \"target\": \"CM1\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 267.69,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/clip_only/CM1/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/clip_only/CM1/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_0p25\",\n      \"target\": \"ar5\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 90.54,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_0p25/ar5/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p25/ar5/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_0p1\",\n      \"target\": \"CM1\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 258.2,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_0p1/CM1/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p1/CM1/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_0p5\",\n      \"target\": \"ar5\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 89.82,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_0p5/ar5/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p5/ar5/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_0p25\",\n      \"target\": \"CM1\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 261.52,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_0p25/CM1/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p25/CM1/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_1p0\",\n      \"target\": \"ar5\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 89.38,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_1p0/ar5/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_1p0/ar5/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_0p5\",\n      \"target\": \"CM1\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 265.11,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_0p5/CM1/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p5/CM1/0/progress.json\"\n    },\n    {\n      \"condition\": \"sigma_1p0\",\n      \"target\": \"CM1\",\n      \"seed\": 0,\n      \"status\": \"completed\",\n      \"returncode\": 0,\n      \"seconds\": 273.89,\n      \"log\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/runs/_scheduler/pilot/logs/sigma_1p0/CM1/0.log\",\n      \"output\": \"/root/federated-defect-prediction-benchmark/experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_1p0/CM1/0/progress.json\"\n    }\n  ]\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/runs/formal/verification.json": "{\n  \"status\": \"passed\",\n  \"expected_tasks\": 1800,\n  \"verified_tasks\": 1800,\n  \"verified_rows\": 3600,\n  \"error_count\": 0,\n  \"errors\": [],\n  \"error_list_truncated\": false,\n  \"saturated_probability_tasks\": 184,\n  \"max_saturated_probability_fraction\": 0.06611570247933884,\n  \"threshold_edge_count\": 78\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/none/ar5/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"ar5\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/none/CM1/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"CM1\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/clip_only/ar5/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"ar5\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/clip_only/CM1/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"CM1\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p1/ar5/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"ar5\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p1/CM1/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"CM1\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p25/ar5/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"ar5\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p25/CM1/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"CM1\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p5/ar5/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"ar5\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_0p5/CM1/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"CM1\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_1p0/ar5/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"ar5\",\n  \"seed\": 0\n}",
+    "experiments/privacy/flr-gaussian-extension-v1/pilot/sigma_1p0/CM1/0/progress.json": "{\n  \"status\": \"pilot_passed\",\n  \"round\": 100,\n  \"target\": \"CM1\",\n  \"seed\": 0\n}",
+    "requirements.txt": "# Versions used for the completed Windows / Python 3.13.5 experiment.\nnumpy==2.3.3\npandas==2.3.3\nscikit-learn==1.7.2\nscipy==1.16.2\nthreadpoolctl==3.6.0\n"
+  },
+  "archives": {
+    "服务器迁移备份_2026-11-24/project-and-results.tar.gz": {
+      "bytes": 549361348,
+      "sha256": "16e03f69e280d1e4be89ed13a8529beeadfcf97945dac0d2faa5824d16c1e75f"
+    },
+    "服务器迁移备份_2026-11-24/flr-tff020-environment.tar.gz": {
+      "bytes": 894972517,
+      "sha256": "ce2970891c9943aa879c39d7c1926839d685f3f306775be85983d8b5e61772f6"
+    },
+    "FLR_ALMITY_隐私实验交付_最终版.zip": {
+      "bytes": 78467621,
+      "sha256": "d27318055182495a9ca27b10ce5498e8d501771acbc0dd918a81eaeda3f5692b"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "total": 1800,
+  "completed": 1800,
+  "current": null,
+  "started_at": 1795451847.605014,
+  "last_completed": {
+    "condition": "sigma_1p0",
+    "target": "xerces-1.3",
+    "seed": 9
+  },
+  "finished_at": 1795455408.647916
+}
