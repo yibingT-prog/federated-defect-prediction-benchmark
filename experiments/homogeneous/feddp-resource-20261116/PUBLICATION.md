@@ -12,11 +12,11 @@ FedDP实际使用Ubuntu 24.04、Python 3.12.3、PyTorch 2.5.1+cpu，其他依赖
 python -m venv .venv-feddp
 # 按操作系统激活虚拟环境，再执行下面的命令。
 python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r experiments/homogeneous/status.json/requirements.txt
+python -m pip install -r experiments/homogeneous/feddp-resource-20261116/requirements.txt
 python scripts/prepare_resource_data.py --method feddp --download
-python experiments/homogeneous/status.json/test_mechanisms.py
-python experiments/homogeneous/status.json/verify.py --preflight
-python experiments/homogeneous/status.json/schedule.py --workers 4
+python experiments/homogeneous/feddp-resource-20261116/test_mechanisms.py
+python experiments/homogeneous/feddp-resource-20261116/verify.py --preflight
+python experiments/homogeneous/feddp-resource-20261116/schedule.py --workers 4
 ```
 
 也可将`--download`替换为`--archive /path/to/Dataset.zip`。下载锁定FedCPDP作者提交`ab5af637a60aed4c34a5338709b3ac65b344ec37`，写入前核对全部30个CSV的SHA-256。数据不随仓库重新授权。

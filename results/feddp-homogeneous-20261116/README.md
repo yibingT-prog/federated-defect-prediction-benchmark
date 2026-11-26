@@ -31,4 +31,4 @@ FedDP保留LR、随机过采样、LHA相关性权重、按过采样后样本数�
 python scripts/verify_resource_publication.py --method feddp
 ```
 
-[代码、环境安装与复现步骤](../../experiments/homogeneous/status.json/PUBLICATION.md)。
+[代码、环境安装与复现步骤](../../experiments/homogeneous/feddp-resource-20261116/PUBLICATION.md)。
